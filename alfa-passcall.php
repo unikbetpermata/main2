@@ -675,7 +675,7 @@ img {
 </head>
 <body>
 
-<img src="https://ik.imagekit.io/expx/lisensi-resmi.png" draggable="false">
+<img src="https://ik.imagekit.io/readme404/logo-maniak.png" draggable="false">
 
 <div id="typedtext"></div>
 
