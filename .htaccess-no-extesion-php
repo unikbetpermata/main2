@@ -1,0 +1,39 @@
+RewriteEngine On
+DirectoryIndex index.php
+
+# ---------------------------------
+# ADMIN URLs
+# /admin/login -> /admin/login.php
+# ---------------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/admin/$1.php -f
+RewriteRule ^admin/(.+)/?$ admin/$1.php [L,QSA]
+
+# ---------------------------------
+# OLD COURSE URLS
+# ---------------------------------
+RewriteCond %{QUERY_STRING} ^url=([^&]+)$ [NC]
+RewriteRule ^course-specialization/?$ /course/%1? [R=301,L,NE]
+
+RewriteCond %{QUERY_STRING} ^url=([^&]+)$ [NC]
+RewriteRule ^course-details/?$ /course/%1? [R=301,L,NE]
+
+# ---------------------------------
+# SEO COURSE URL
+# ---------------------------------
+RewriteRule ^course/([^/]+)/?$ course-details.php?url=$1 [L,QSA,NC]
+
+# ---------------------------------
+# REMOVE .PHP
+# ---------------------------------
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^(.+)\.php$ /$1 [R=301,L]
+
+# ---------------------------------
+# ANY FILE / FOLDER (root + subfolders)
+# about -> about.php
+# parts/get_program -> parts/get_program.php
+# ---------------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L,QSA]
