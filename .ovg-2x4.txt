@@ -4726,7 +4726,7 @@ font-size:12px;
 										  "name": "Apakah domain hoki88.asia atau hoki88.id sama dengan hoki88.com?",
 										  "acceptedAnswer": {
 											"@type": "Answer",
-											"text": "Klik "Logout" di menu account untuk immediate session terminate. Jika close browser tanpa logout, session otomatis expire setelah 30 menit inactivity."
+											"text": "Klik Logout di menu account untuk immediate session terminate. Jika close browser tanpa logout, session otomatis expire setelah 30 menit inactivity."
 										  }
 										}
 									  ]
