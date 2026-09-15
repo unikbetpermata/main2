@@ -1,0 +1,590 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 6]>
+<html xmlns="http://www.w3.org/1999/xhtml" id="ie6" lang="pl-PL">
+<![endif]-->
+<!--[if IE 7]>
+<html xmlns="http://www.w3.org/1999/xhtml" id="ie7" lang="pl-PL">
+<![endif]-->
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml" id="ie8" lang="pl-PL">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl-PL">
+<!--<![endif]-->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" href="https://moa.edu.pl/wp-content/themes/Obserwatorium/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://moa.edu.pl/wp-content/themes/Chameleon/css/colorpicker.css" type="text/css" media="screen" />
+
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Kreon:light,regular' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<link rel="pingback" href="https://moa.edu.pl/xmlrpc.php" />
+
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="https://moa.edu.pl/wp-content/themes/Chameleon/css/ie6style.css" />
+	<script type="text/javascript" src="https://moa.edu.pl/wp-content/themes/Chameleon/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript">DD_belatedPNG.fix('img#logo, span.overlay, a.zoom-icon, a.more-icon, #menu, #menu-right, #menu-content, ul#top-menu ul, #menu-bar, .footer-widget ul li, span.post-overlay, #content-area, .avatar-overlay, .comment-arrow, .testimonials-item-bottom, #quote, #bottom-shadow, #quote .container');</script>
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="https://moa.edu.pl/wp-content/themes/Chameleon/css/ie7style.css" />
+<![endif]-->
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="https://moa.edu.pl/wp-content/themes/Chameleon/css/ie8style.css" />
+<![endif]-->
+
+<script type="text/javascript">
+	document.documentElement.className = 'js';
+</script>
+
+<script>var et_site_url='https://moa.edu.pl';var et_post_id='2';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><title>Kazimierz Kordylewski - Patron MOA | Młodzieżowe Obserwatorium Astronomiczne</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Młodzieżowe Obserwatorium Astronomiczne &raquo; Kanał z wpisami" href="https://moa.edu.pl/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Młodzieżowe Obserwatorium Astronomiczne &raquo; Kanał z komentarzami" href="https://moa.edu.pl/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Młodzieżowe Obserwatorium Astronomiczne &raquo; Kazimierz Kordylewski – Patron MOA Kanał z komentarzami" href="https://moa.edu.pl/kordylewski/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://moa.edu.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmoa.edu.pl%2Fkordylewski%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://moa.edu.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmoa.edu.pl%2Fkordylewski%2F&#038;format=xml" />
+<meta content="Obserwatorium v." name="generator"/>
+	<style type="text/css">
+		body { color: #000000; }
+		#content-area a, #content a { color: #2c6cba; }
+		ul#top-menu li a { color: #003f8a !important; }
+		ul#top-menu > li.current_page_item > a, ul#top-menu li:hover > a, ul#top-menu > li.current-cat > a, ul#top-menu > li.current-menu-item > a { color: #91172c !important; }
+		h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: # !important; }
+
+		#sidebar a { color:#000000; }
+		.footer-widget { color:#000000 }
+		#footer a, ul#bottom-menu li a { color:# }
+	</style>
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='contact-form-7-css' href='https://moa.edu.pl/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.7' media='all' />
+<link rel='stylesheet' id='cookie-notice-front-css' href='https://moa.edu.pl/wp-content/plugins/cookie-notice/css/front.min.css?ver=3.1.9' media='all' />
+<link rel='stylesheet' id='et_responsive-css' href='https://moa.edu.pl/wp-content/themes/Chameleon/css/responsive.css?ver=c879dde809ec3afa58313a0efe058b14' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='https://moa.edu.pl/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.css?ver=c879dde809ec3afa58313a0efe058b14' media='screen' />
+<link rel='stylesheet' id='tablepress-default-css' href='https://moa.edu.pl/wp-content/tablepress-combined.min.css?ver=163' media='all' />
+<style id="wp-typography-custom-inline-css">
+sup{vertical-align: 60%;font-size: 75%;line-height: 100%}sub{vertical-align: -10%;font-size: 75%;line-height: 100%}.amp{font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", "Warnock Pro", serif;font-weight: normal;font-style: italic;font-size: 1.1em;line-height: 1em}.caps{font-size: 90%}.dquo{margin-left:-.40em}.quo{margin-left:-.2em}.pull-double{margin-left:-.38em}.push-double{margin-right:.38em}.pull-single{margin-left:-.15em}.push-single{margin-right:.15em}
+/*# sourceURL=wp-typography-custom-inline-css */
+</style>
+<style id="wp-typography-safari-font-workaround-inline-css">
+body {-webkit-font-feature-settings: "liga";font-feature-settings: "liga";-ms-font-feature-settings: normal;}
+/*# sourceURL=wp-typography-safari-font-workaround-inline-css */
+</style>
+<link rel='stylesheet' id='et-shortcodes-css-css' href='https://moa.edu.pl/wp-content/themes/Chameleon/epanel/shortcodes/css/shortcodes-legacy.css?ver=3.9.13' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css' href='https://moa.edu.pl/wp-content/themes/Chameleon/epanel/shortcodes/css/shortcodes_responsive.css?ver=3.9.13' media='all' />
+<link rel='stylesheet' id='magnific_popup-css' href='https://moa.edu.pl/wp-content/themes/Chameleon/includes/page_templates/js/magnific_popup/magnific_popup.css?ver=1.3.4' media='screen' />
+<link rel='stylesheet' id='et_page_templates-css' href='https://moa.edu.pl/wp-content/themes/Chameleon/includes/page_templates/page_templates.css?ver=1.8' media='screen' />
+<script id="jquery-core-js" src="https://moa.edu.pl/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://moa.edu.pl/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="jquery_cycle-js" src="https://moa.edu.pl/wp-content/themes/Chameleon/js/jquery.cycle.all.min.js?ver=1.0"></script>
+<script id="cookie-notice-front-js-before">
+var cnArgs = {"ajaxUrl":"https:\/\/moa.edu.pl\/wp-admin\/admin-ajax.php","nonce":"efacb949a1","hideEffect":"fade","position":"bottom","onScroll":false,"onScrollOffset":100,"onClick":false,"cookieName":"cookie_notice_accepted","cookieTime":2592000,"cookieTimeRejected":2592000,"globalCookie":false,"redirection":false,"cache":false,"revokeCookies":false,"revokeCookiesOpt":"automatic"};
+
+//# sourceURL=cookie-notice-front-js-before
+</script>
+<script id="cookie-notice-front-js" src="https://moa.edu.pl/wp-content/plugins/cookie-notice/js/front.min.js?ver=3.1.9"></script>
+<link rel="https://api.w.org/" href="https://moa.edu.pl/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://moa.edu.pl/wp-json/wp/v2/pages/2" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://moa.edu.pl/xmlrpc.php?rsd" />
+
+<link rel="canonical" href="https://moa.edu.pl/kordylewski/" />
+<link rel='shortlink' href='https://moa.edu.pl/?p=2' />
+    
+    <script type="text/javascript">
+        var ajaxurl = 'https://moa.edu.pl/wp-admin/admin-ajax.php';
+    </script>
+
+        <script type="text/javascript">
+            var jQueryMigrateHelperHasSentDowngrade = false;
+
+			window.onerror = function( msg, url, line, col, error ) {
+				// Break out early, do not processing if a downgrade reqeust was already sent.
+				if ( jQueryMigrateHelperHasSentDowngrade ) {
+					return true;
+                }
+
+				var xhr = new XMLHttpRequest();
+				var nonce = '8ae1d5b8cc';
+				var jQueryFunctions = [
+					'andSelf',
+					'browser',
+					'live',
+					'boxModel',
+					'support.boxModel',
+					'size',
+					'swap',
+					'clean',
+					'sub',
+                ];
+				var match_pattern = /\)\.(.+?) is not a function/;
+                var erroredFunction = msg.match( match_pattern );
+
+                // If there was no matching functions, do not try to downgrade.
+                if ( null === erroredFunction || typeof erroredFunction !== 'object' || typeof erroredFunction[1] === "undefined" || -1 === jQueryFunctions.indexOf( erroredFunction[1] ) ) {
+                    return true;
+                }
+
+                // Set that we've now attempted a downgrade request.
+                jQueryMigrateHelperHasSentDowngrade = true;
+
+				xhr.open( 'POST', 'https://moa.edu.pl/wp-admin/admin-ajax.php' );
+				xhr.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
+				xhr.onload = function () {
+					var response,
+                        reload = false;
+
+					if ( 200 === xhr.status ) {
+                        try {
+                        	response = JSON.parse( xhr.response );
+
+                        	reload = response.data.reload;
+                        } catch ( e ) {
+                        	reload = false;
+                        }
+                    }
+
+					// Automatically reload the page if a deprecation caused an automatic downgrade, ensure visitors get the best possible experience.
+					if ( reload ) {
+						location.reload();
+                    }
+				};
+
+				xhr.send( encodeURI( 'action=jquery-migrate-downgrade-version&_wpnonce=' + nonce ) );
+
+				// Suppress error alerts in older browsers
+				return true;
+			}
+        </script>
+
+		<!-- used in scripts --><meta name="et_featured_auto_speed" content="7000" /><meta name="et_disable_toptier" content="1" /><meta name="et_featured_slider_auto" content="1" /><meta name="et_theme_folder" content="https://moa.edu.pl/wp-content/themes/Chameleon" /><style type="text/css">body { background-color: #e8e8e8; }body { background-image: url(https://moa.edu.pl/wp-content/themes/Chameleon/images/body-bg14.png); }</style><link id='droid_serif' href='//fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css' /><style type='text/css'>h1,h2,h3,h4,h5,h6,ul#top-menu a { font-family: 'Droid Serif', Arial, sans-serif !important;  }</style><style type='text/css'>h1,h2,h3,h4,h5,h6,ul#top-menu > li.current_page_item > a, ul#top-menu a:hover, ul#top-menu > li.sfHover > a, h2.title a { color: #728fa3;  }
+		#featured h2 a, #featured-modest h2 a, #featured h2, #featured-modest h2 { color: #fff !important; }
+		</style><link id='arvo' href='//fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css' /><style type='text/css'>body { font-family: 'Arvo', Arial, sans-serif !important;  }</style><style type='text/css'>body { color: #000000 }</style><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="shortcut icon" href="https://moa.edu.pl/wp-content/uploads/2017/05/favicon.ico" /><link rel="preload" href="https://moa.edu.pl/wp-content/themes/Chameleon/core/admin/fonts/modules.ttf" as="font" crossorigin="anonymous"><style>
+        #wpadminbar #wp-admin-bar-amelia-menu > .ab-item svg {
+            color: #a7aaad;
+        }
+
+        #wpadminbar #wp-admin-bar-amelia-menu:hover > .ab-item svg {
+            color: #72aee6;
+        }
+
+        #wpadminbar #wp-admin-bar-amelia-menu > .ab-item .ab-icon img {
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            object-fit: contain;
+        }
+        </style><meta name="google-site-verification" content="iU_iZvv7FecOWbZqL7cG_5ROktFtqfaoX5Vb3crpt9Y">	<style type="text/css">
+		#et_pt_portfolio_gallery { margin-left: -41px; margin-right: -51px; }
+		.et_pt_portfolio_item { margin-left: 35px; }
+		.et_portfolio_small { margin-left: -40px !important; }
+		.et_portfolio_small .et_pt_portfolio_item { margin-left: 32px !important; }
+		.et_portfolio_large { margin-left: -26px !important; }
+		.et_portfolio_large .et_pt_portfolio_item { margin-left: 11px !important; }
+	</style>
+<link rel="stylesheet" id="et-customizer-global-cached-inline-styles" href="https://moa.edu.pl/wp-content/et-cache/global/et-customizer-global-17893661186218.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /><style id="yellow-pencil">
+/*
+	The following CSS codes are created by the YellowPencil plugin.
+	https://yellowpencil.waspthemes.com/
+*/
+#services span strong{text-align:center;}#top-menu .menu-item .sub-menu .menu-item:nth-child(3) .sub-menu .menu-item:nth-child(5) a{text-decoration:none;}@media (max-width:767px){#container #header #mobile_nav ul .menu-item .sub-menu .menu-item:nth-child(2) .sub-menu .menu-item:nth-child(3) a{text-decoration:none;}}
+</style>
+<link rel='stylesheet' id='pgntn_stylesheet-css' href='https://moa.edu.pl/wp-content/plugins/pagination/css/nav-style.css?ver=1.2.7' media='all' />
+
+</head>
+
+<body class="wp-singular page-template page-template-page-full page-template-page-full-php page page-id-2 wp-theme-Chameleon wp-child-theme-Obserwatorium cookies-not-set non-logged-in et_fullwidth_view">
+		<div id="container">
+		<div id="header" class="clearfix">
+			<a href="https://moa.edu.pl/">
+								<img src="https://moa.edu.pl/wp-content/uploads/2014/01/BANER23.jpg" alt="Młodzieżowe Obserwatorium Astronomiczne" id="logo"/>
+			</a>
+			<p id="slogan"></p>
+			<a href="#" id="mobile_nav" class="closed">Navigation<span></span></a>
+			<ul id="top-menu" class="nav"><li id="menu-item-391" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-391"><a href="https://moa.edu.pl/category/aktualnosci/">Aktualności</a></li>
+<li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-92"><a href="#">Oferta edukacyjna</a>
+<ul class="sub-menu">
+	<li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"><a href="#">Dla szkół</a>
+	<ul class="sub-menu">
+		<li id="menu-item-14762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14762"><a href="https://moa.edu.pl/seans-dla-przedszkolakow/">Seans dla przedszkolaków</a></li>
+		<li id="menu-item-11686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11686"><a href="https://moa.edu.pl/prelekcja-i-seans-dla-najmlodszych/">Prelekcja i&nbsp;seans dla najmłodszych uczniów</a></li>
+		<li id="menu-item-342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="https://moa.edu.pl/prelekcje/">Prelekcja i&nbsp;seans dla starszych uczniów</a></li>
+		<li id="menu-item-425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-425"><a href="https://moa.edu.pl/gwiezdna-przygoda-w-moa/">Gwiezdna Przygoda</a></li>
+		<li id="menu-item-10569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10569"><a href="https://moa.edu.pl/kmo/">Klub Młodego Odkrywcy</a></li>
+	</ul>
+</li>
+	<li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-46"><a href="#">Koła zainteresowań</a>
+	<ul class="sub-menu">
+		<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://moa.edu.pl/kolo-astronomiczne/">Astronomia</a></li>
+		<li id="menu-item-12824" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12824"><a href="https://moa.edu.pl/kolo-astronomiczne-dla-najmlodszych/">Astronomia dla najmłodszych</a></li>
+		<li id="menu-item-14802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14802"><a href="https://moa.edu.pl/kolo-astronomiczne-online-2026-2027/">Koło astronomiczne online</a></li>
+		<li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143"><a href="https://moa.edu.pl/kolo-multimedialne/">Pracownia multimedialna</a></li>
+		<li id="menu-item-9421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9421"><a href="https://moa.edu.pl/laboratorium-chemiczne/">Laboratorium chemiczne</a></li>
+		<li id="menu-item-5775" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5775"><a href="https://moa.edu.pl/pracownia-robotyki/">Pracownia robotyki</a></li>
+		<li id="menu-item-9003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9003"><a href="https://moa.edu.pl/klub-mlodego-odkrywcy/">Klub Młodego Odkrywcy</a></li>
+		<li id="menu-item-14613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14613"><a href="https://moa.edu.pl/laboratorium-biologiczne/">Laboratorium biologiczne</a></li>
+	</ul>
+</li>
+	<li id="menu-item-93" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-93"><a href="#">Dla osób indywidualnych</a>
+	<ul class="sub-menu">
+		<li id="menu-item-426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-426"><a href="https://moa.edu.pl/weekend-w-moa-2/">Weekend w&nbsp;<span class="caps">MOA</span></a></li>
+		<li id="menu-item-10024" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10024"><a href="https://moa.edu.pl/wieczorny-pokaz-nieba/">Wieczorny pokaz&nbsp;nieba</a></li>
+		<li id="menu-item-4481" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4481"><a target="_blank" href="http://sp9moa.moa.edu.pl/oferta-edukacyjna/">Niepołomicki Klub Krótkofalowców <span class="caps">SP9MOA</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-5980" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5980"><a target="_blank" href="http://moa.home.pl/biblioteka/">Księgozbiór biblioteki</a></li>
+	<li id="menu-item-659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-659"><a href="https://moa.edu.pl/najczestsze-pytania/">Najczęstsze pytania</a></li>
+</ul>
+</li>
+<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-53"><a href="#">Obserwatorium</a>
+<ul class="sub-menu">
+	<li id="menu-item-54" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-54"><a href="#">O&nbsp;nas</a>
+	<ul class="sub-menu">
+		<li id="menu-item-952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-952"><a href="https://moa.edu.pl/historia-obserwatorium/">Historia Obserwatorium</a></li>
+		<li id="menu-item-87" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-87"><a href="/kordylewski" aria-current="page">Nasz Patron</a></li>
+		<li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="/pracownicy">Pracownicy</a></li>
+		<li id="menu-item-7975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7975"><a href="https://moa.edu.pl/rada-rodzicow/">Rada Rodziców</a></li>
+		<li id="menu-item-11216" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11216"><a href="#">Dofinansowania</a>
+		<ul class="sub-menu">
+			<li id="menu-item-11219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11219"><a href="https://moa.edu.pl/przebudowa-i-rozbudowa-moa/">Przebudowa i&nbsp;rozbudowa <span class="caps">MOA</span></a></li>
+		</ul>
+</li>
+		<li id="menu-item-5941" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5941"><a href="#">Dokumenty</a>
+		<ul class="sub-menu">
+			<li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a target="_blank" href="https://moa.edu.pl/wp-content/uploads/2016/10/Statut-MOA.pdf">Statut placówki</a></li>
+			<li id="menu-item-6513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6513"><a target="_blank" href="https://bip.malopolska.pl/umigniepolomice,m,321121,mlodziezowe-obserwatorium-astronomiczne-im-kazimierza-kordylewskiego-w-niepolomicach.html">Sprawozdania <span class="caps">BIP</span></a></li>
+			<li id="menu-item-6297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6297"><a href="https://moa.edu.pl/informacje-rodo/">Informacje <span class="caps">RODO</span></a></li>
+			<li id="menu-item-12622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12622"><a href="#">Standardy Ochrony Małoletnich</a>
+			<ul class="sub-menu">
+				<li id="menu-item-12625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12625"><a href="https://moa.edu.pl/wp-content/uploads/2024/07/Mlodziezowe-Obserwatorium-Astronomiczne-w-Niepolomicach-wersja-skrocona.pdf">Wersja skrócona</a></li>
+				<li id="menu-item-12628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12628"><a href="https://moa.edu.pl/wp-content/uploads/2024/07/Mlodziezowe-Obserwatorium-Astronomiczne-w-Niepolomicach-wersja-zupelna.pdf">Wersja zupełna</a></li>
+			</ul>
+</li>
+		</ul>
+</li>
+		<li id="menu-item-4613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4613"><a href="https://moa.edu.pl/dla-mediow/">Dla mediów</a></li>
+	</ul>
+</li>
+	<li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-55"><a href="#">Kronika <span class="caps">WWW</span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-58" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a target="_blank" href="http://www.moa.home.pl/moaold/">Do&nbsp;roku&nbsp;2012</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2070"><a href="https://moa.edu.pl/albo-obserwatorium-w-mediach/">Media o&nbsp;Obserwatorium</a></li>
+</ul>
+</li>
+<li id="menu-item-434" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-434"><a href="#">Planetarium</a>
+<ul class="sub-menu">
+	<li id="menu-item-733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-733"><a href="https://moa.edu.pl/seanse-w-planetarium/">Seanse w&nbsp;Planetarium</a></li>
+	<li id="menu-item-922" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-922"><a href="https://moa.edu.pl/historyczny-projektor-gwiazd/">Historyczny projektor gwiazd</a></li>
+	<li id="menu-item-1176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1176"><a href="https://moa.edu.pl/regulamin-planetarium/">Regulamin</a></li>
+</ul>
+</li>
+<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-61"><a href="#">Nasza aktywność</a>
+<ul class="sub-menu">
+	<li id="menu-item-8254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8254"><a target="_blank" href="http://wdomu.moa.edu.pl/">Zostań w&nbsp;domu z&nbsp;<span class="caps">MOA</span>!</a></li>
+	<li id="menu-item-8337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8337"><a target="_blank" href="https://moa.edu.pl/zapytaj-astronoma/">Zapytaj astronoma</a></li>
+	<li id="menu-item-6871" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6871"><a href="https://moa.edu.pl/category/wydarzenia/">Wydarzenia na&nbsp;niebie</a></li>
+	<li id="menu-item-684" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684"><a href="https://moa.edu.pl/cykl-spojrzenie-w-niebo/"><span class="dquo">“</span>Spojrzenie w&nbsp;niebo”</a></li>
+	<li id="menu-item-63" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63"><a target="_blank" href="http://uczniowie.moa.edu.pl/">Blog Obserwatorium</a></li>
+	<li id="menu-item-68" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68"><a target="_blank" href="https://www.youtube.com/channel/UCcWg1n3nR83olr-Valdvz0Q">Filmy</a></li>
+	<li id="menu-item-6316" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6316"><a target="_blank" href="https://moa.edu.pl/obserwatorium-finalista-waznego-konkursu/">Popularyzator Nauki&nbsp;2018</a></li>
+	<li id="menu-item-80" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80"><a href="/malopolska-noc-naukowcow">Noc Naukowców</a></li>
+	<li id="menu-item-689" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-689"><a href="https://moa.edu.pl/konferencja-astronomia-xxi-wieku-i-jej-nauczanie/">Konferencja</a></li>
+</ul>
+</li>
+<li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-84"><a href="#">Współpraca</a>
+<ul class="sub-menu">
+	<li id="menu-item-116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-116"><a href="#">Współpracujemy z&nbsp;…</a>
+	<ul class="sub-menu">
+		<li id="menu-item-9063" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9063"><a target="_blank" href="https://kmo.org.pl/pl/">Klub Młodego Odkrywcy</a></li>
+		<li id="menu-item-558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-558"><a href="https://moa.edu.pl/sp9moa/"><span class="caps">SP9MOA</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-1417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1417"><a href="https://moa.edu.pl/sponsorzy/">Sponsorzy</a></li>
+	<li id="menu-item-115" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-115"><a href="/odnosniki">Odnośniki</a></li>
+</ul>
+</li>
+<li id="menu-item-13761" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13761"><a href="#">Kontakt</a>
+<ul class="sub-menu">
+	<li id="menu-item-1207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1207"><a href="https://moa.edu.pl/kontakt/">Dane kontaktowe</a></li>
+	<li id="menu-item-13760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13760"><a href="https://moa.edu.pl/dojazd-do-moa/">Dojazd do&nbsp;<span class="caps">MOA</span></a></li>
+</ul>
+</li>
+</ul>
+			<div id="additional-info">
+				<div id="et-social-icons">
+					<a href='https://www.facebook.com/moaniepolomice/' target='_blank'><img alt='Facebook' src='https://moa.edu.pl/wp-content/themes/Chameleon/images/facebook.png' /></a><a href='https://www.youtube.com/channel/UCcWg1n3nR83olr-Valdvz0Q' target='_blank'><img alt='Rss' src='https://moa.edu.pl/wp-content/themes/Chameleon/images/rss.png' /></a><a href='https://www.instagram.com/moaniepolomice/' target='_blank'><img alt='Instagram' src='https://moa.edu.pl/wp-content/themes/Chameleon/images/instagram.png' /></a>					
+<a href="https://twitter.com/MOA_Niepolomice/" target="_blank"> <img src="https://moa.edu.pl/wp-content/themes/Chameleon/images/twitter.png"></a>					
+				</div>
+
+				<div id="search-form">
+					<form method="get" id="searchform" action="https://moa.edu.pl//">
+						<input type="text" value="Search this site..." name="s" id="searchinput" />
+						<input type="image" src="https://moa.edu.pl/wp-content/themes/Chameleon/images/search_btn.png" id="searchsubmit" />
+					</form>
+				</div> <!-- end #search-form -->
+			</div> <!-- end #additional-info -->
+		</div> <!-- end #header -->
+<div id="breadcrumbs">
+	<span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to Młodzieżowe Obserwatorium Astronomiczne." href="https://moa.edu.pl" class="home">Młodzieżowe Obserwatorium Astronomiczne</a></span> &gt; <span typeof="v:Breadcrumb"><span property="v:title">Kazimierz Kordylewski – Patron <span class="caps">MOA</span></span></span></div> <!-- end #breadcrumbs --><div id="category-name">
+	<div id="category-inner">
+				<h1 class="category-title">Kazimierz Kordylewski – Patron <span>MOA</span></h1>
+		
+			</div> <!-- end #category-inner -->
+</div> <!-- end #category-name -->
+<div id="content" class="clearfix fullwidth">
+	<div id="left-area">
+			<div class="entry post clearfix">
+							
+							
+			<p style="text-align: justify;"><img fetchpriority="high" decoding="async" class="alignleft size-full wp-image-1648" src="https://moa.edu.pl/wp-content/uploads/2013/11/Kazimierz_Kordylewski.jpg" alt="Kazimierz Kordylewski" width="300" height="300" srcset="https://moa.edu.pl/wp-content/uploads/2013/11/Kazimierz_Kordylewski.jpg 300w, https://moa.edu.pl/wp-content/uploads/2013/11/Kazimierz_Kordylewski-150x150.jpg 150w, https://moa.edu.pl/wp-content/uploads/2013/11/Kazimierz_Kordylewski-48x48.jpg 48w, https://moa.edu.pl/wp-content/uploads/2013/11/Kazimierz_Kordylewski-186x186.jpg 186w, https://moa.edu.pl/wp-content/uploads/2013/11/Kazimierz_Kordylewski-184x184.jpg 184w" sizes="(max-width: 300px) 100vw, 300px">Patro­nem Mło­dzie­żo­wego Obser­wa­to­rium Astro­no­micz­nego w&nbsp;Nie­po­ło­mi­cach jest <strong>dr&nbsp;Kazi­mierz Kor­dy­lew­ski</strong> – pol­ski astro­nom z&nbsp;Krakowa.</p>
+<p>Uro­czy­stość nada­nia imie­nia naszemu Obser­wa­to­rium odbyła się 9 paź­dzier­nika 2004&nbsp;roku.<br>
+Kazi­mierz Kor­dy­lew­ski uro­dził się w&nbsp;Pozna­niu 11 paź­dzier­nika 1903 roku jako syn Wła­dy­sława i&nbsp;Fran­ciszki z&nbsp;domu Woroch. Do&nbsp;1924&nbsp;r. prze­by­wał w&nbsp;Pozna­niu. W&nbsp;1922&nbsp;r. w&nbsp;Gim­na­zjum im.&nbsp;św.&nbsp;Marii Mag­da­leny zdał egza­min doj­rza­ło­ści z&nbsp;odzna­cze­niem za&nbsp;dzia­łal­ność orga­ni­za­cyjną; przez&nbsp;2 lata był pre­ze­sem sto­wa­rzy­sze­nia ide­owo-samo­po­mo­co­wego Sowa, sku­pia­ją­cego mło­dzież pol­ską i&nbsp;wyda­ją­cego dru­ko­wane cza­so­pi­smo Mło­dzież&nbsp;Sobie.</p>
+<p>Astro­no­mię, którą zain­te­re­so­wał się już w&nbsp;1913&nbsp;r., stu­dio­wał od&nbsp;1922&nbsp;r. na&nbsp;Uni­wer­sy­te­cie Poznań­skim, po&nbsp;czym w&nbsp;1924&nbsp;r. prze­niósł się na&nbsp;dal­sze stu­dia do&nbsp;Kra­kowa, na&nbsp;Uni­wer­sy­tet Jagiel­loń­ski, uzy­sku­jąc od&nbsp;razu sta­no­wi­sko pra­cow­nika pomoc­ni­czego (asy­stenta) w&nbsp;Obser­wa­to­rium Astro­no­micz­nym <span class="caps">UJ</span>, pod&nbsp;kie­row­nic­twem prof.dra Tade­usza Banachiewicza.</p>
+<p>W&nbsp;1923&nbsp;r. brał udział w&nbsp;wypra­wie niwe­la­cyj­nej Naro­do­wego Insty­tutu Astro­no­micz­nego im.&nbsp;M.Kopernika w&nbsp;Kra­ko­wie, a&nbsp;w&nbsp;latach 1924 i&nbsp;1926 kie­ro­wał pra­cami polo­wymi dwu następ­nych wypraw, wyko­nu­jąc niwe­la­cję ści­słą wzdłuż szosy Kra­ków – Kielce. W&nbsp;1926&nbsp;r. uzy­skał abso­lu­to­rium. W&nbsp;tym samym roku doko­nał pierw­szego odkry­cia, mia­no­wi­cie nowej gwiazdy T&nbsp;Corvi.</p>
+<p>Stu­dia i&nbsp;prace zagra­niczne wyko­ny­wał: w&nbsp;1926&nbsp;r. w&nbsp;Szwe­cji, Danii, Niem­czech i&nbsp;Cze­cho­sło­wa­cji, w&nbsp;1927&nbsp;r. w&nbsp;Lapo­nii Szwedz­kiej (orga­ni­za­cja i&nbsp;kie­row­nic­two jed­nej z&nbsp;3 sta­cji obser­wa­cji zaćmie­nia Słońca), w&nbsp;1928&nbsp;r. w&nbsp;Niem­czech i&nbsp;Holan­dii (stał się człon­kiem Mię­dzy­na­ro­do­wej Unii Astro­no­micz­nej i&nbsp;brał udział w&nbsp;jej kon­gre­sie w&nbsp;Lej­dzie), w&nbsp;1931&nbsp;r. w&nbsp;Austrii i&nbsp;Dal­ma­cji. W&nbsp;1932&nbsp;r. uzy­skał sto­pień dok­tora filo­zo­fii w&nbsp;zakre­sie astro­no­mii w&nbsp;Uni­wer­sy­te­cie Jagiel­loń­skim. W&nbsp;1934&nbsp;r. został adiunk­tem. W&nbsp;1936&nbsp;r. brał udział w&nbsp;Pol­skiej Eks­pe­dy­cji na&nbsp;zaćmie­nie Słońca do&nbsp;Gre­cji, a&nbsp;przez&nbsp;dwa dal­sze mie­siące doko­ny­wał obser­wa­cji astro­no­micz­nych na&nbsp;wyspie Chios.</p>
+<p>W&nbsp;1929&nbsp;r. zało­żył rodzinę, poślu­bia­jąc Jadwigę Pają­kówną (ich dzieci to: Jerzy, Zbi­gniew, Wanda Kor­dy­lew­ska-Dutka, Leszek).</p>
+<p>Pod­czas wojny i&nbsp;oku­pa­cji nie­miec­kiej prze­rwał sys­te­ma­tyczną pracę naukową upra­wia­jąc ją&nbsp;tylko&nbsp;w&nbsp;mini­mal­nym stop­niu oraz&nbsp;doryw­czo, a&nbsp;zarob­ko­wał jako kupiec. Jed­no­cze­śnie pomocny był prof.&nbsp;T. Bana­chie­wi­czowi, roz­ta­cza­jąc opiekę nad&nbsp;mie­niem Obser­wa­to­rium w&nbsp;cza­sie uwię­zie­nia pro­fe­sora w&nbsp;Sach­sen­hau­sen, jak i&nbsp;po&nbsp;jego wysie­dle­niu z&nbsp;miesz­ka­nia w&nbsp;gma­chu Obser­wa­to­rium. W&nbsp;szcze­gól­no­ści zabez­pie­czył cenne astro­la­bia i&nbsp;inne zabyt­kowe przy­rządy, zako­pu­jąc je&nbsp;w&nbsp;piw­ni­cach Obser­wa­to­rium. Nie&nbsp;dopu­ścił też do&nbsp;zde­wa­sto­wa­nia zakładu i&nbsp;pozba­wie­nia go&nbsp;instru­men­tów na&nbsp;rzecz Obser­wa­to­rium w&nbsp;Pozna­niu. W&nbsp;1944&nbsp;r. wobec groźby wywie­zie­nia do&nbsp;Nie­miec ukry­wał się przez&nbsp;mie­siąc pod&nbsp;Kra­ko­wem we&nbsp;wła­snym ogro­dzie (zapu­ścił&nbsp;brodę).</p>
+<p>Po&nbsp;wyzwo­le­niu Kra­kowa w&nbsp;1945&nbsp;r. nie­zwłocz­nie sta­wił się ponow­nie do&nbsp;pracy w&nbsp;Obser­wa­to­rium Astro­no­micz­nym <span class="caps">UJ</span>, roz­po­czy­na­jąc obser­wa­cje astro­no­miczne i&nbsp;podej­mu­jąc prace orga­ni­za­cyjne, w&nbsp;szcze­gól­no­ści przy wzno­wie­niu dzia­łal­no­ści Zakładu Apa­ra­tów Nauko­wych Naro­do­wego Insty­tutu Astro­no­micz­nego (zaj­mo­wał się nim od&nbsp;chwili powsta­nia w&nbsp;1933&nbsp;r., a&nbsp;od&nbsp;1948&nbsp;r. był jego kie­row­ni­kiem), prze­ję­tego w&nbsp;pełni roz­woju w&nbsp;1951&nbsp;r. przez&nbsp;Uni­wer­sy­tet Jagiel­loń­ski. Pod­jął także dzia­łal­ność spo­łeczną w&nbsp;orga­ni­zo­wa­niu i&nbsp;pro­wa­dze­niu Spół­dzielni Spo­żyw­ców Pra­cow­ni­ków Uniwersyteckich.</p>
+<p>Pierw­szego wrze­śnia 1945&nbsp;r. pod­jął się cza­so­wego kie­row­nic­twa Obser­wa­to­rium we&nbsp;Wro­cła­wiu, które – nie&nbsp;bez&nbsp;trudu – ode­brał z&nbsp;rąk wojsk radziec­kich. Po&nbsp;doko­na­niu prac porząd­ko­wych oraz&nbsp;orga­ni­za­cyj­nych prze­ka­zał je&nbsp;wraz z&nbsp;filią w&nbsp;Biał­ko­wie (wów­czas Bel­kawe) przy­by­łemu ze&nbsp;Lwowa w&nbsp;poło­wie paź­dzier­nika 1945&nbsp;r. prof.drowi Euge­niu­szowi Rybce. W&nbsp;Obser­wa­to­rium Kra­kow­skim zor­ga­ni­zo­wał służbę czasu i&nbsp;od&nbsp;1946&nbsp;r. nada­wa­nie sygna­łów czasu przez&nbsp;Pol­skie Radio (nada­wał sygnały do&nbsp;1975&nbsp;r.). W&nbsp;1954&nbsp;r. zajął się orga­ni­za­cją prac nad&nbsp;budową radio­te­le­skopu w&nbsp;Krakowie.</p>
+<p>W&nbsp;latach powo­jen­nych zaj­mo­wał nadal sta­no­wi­sko adiunkta, a&nbsp;od&nbsp;1955&nbsp;r. samo­dziel­nego pra­cow­nika nauki przy Kate­drze Astro­no­mii Obser­wa­cyj­nej, kie­ro­wa­nej przez&nbsp;prof.&nbsp;E.Rybkę (prof.&nbsp;T. Bana­chie­wicz zmarł w&nbsp;1954 roku). Wykła­dał astro­no­mię z&nbsp;geo­gra­fią mate­ma­tyczną w&nbsp;Uni­wer­sy­te­cie Jagiel­loń­skim i&nbsp;w&nbsp;Pań­stwo­wej Wyż­szej Szkole Peda­go­gicz­nej w&nbsp;Kra­ko­wie i&nbsp;Rze­szo­wie, oraz&nbsp;astro­no­mię dla stu­den­tów fizyki w&nbsp;Uni­wer­sy­te­tach w&nbsp;Kra­ko­wie i&nbsp;Lubli­nie. Pro­wa­dził wykłady kur­sowe w&nbsp;Uni­wer­sy­te­cie Jagiel­loń­skim z&nbsp;zakresu astro­no­mii sfe­rycz­nej i&nbsp;prak­tycz­nej oraz&nbsp;astro­no­mii gwiaz­do­wej. Od&nbsp;1957&nbsp;r. pro­wa­dził wykłady mono­gra­ficzne zwią­zane z&nbsp;tema­tyką swo­ich spe­cjal­no­ści: z&nbsp;zagad­nień astro­nau­tyki, gwiazd zaćmie­nio­wych i&nbsp;mate­rii pyło­wej na&nbsp;orbi­cie Księżyca.</p>
+<p>Dla doko­na­nia obser­wa­cji astro­no­micz­nych odby­wał liczne podróże zagra­niczne. W&nbsp;szcze­gól­no­ści: od&nbsp;1952&nbsp;r. do&nbsp;Cze­cho­sło­wa­cji, głów­nie w&nbsp;Tatry (na&nbsp;szczy­cie Łom­nicy w&nbsp;1956&nbsp;r. doko­nał odkry­cia dwóch Pyło­wych Księ­ży­ców Ziemi), na&nbsp;Węgry, głów­nie do&nbsp;Obser­wa­to­rium w&nbsp;górach Matra, do&nbsp;<span class="caps">NRD</span> do&nbsp;2‑metrowego tele­skopu w&nbsp;Tau­ten­burgu pod&nbsp;Jeną. Był jed­nym z&nbsp;pierw­szych obser­wa­to­rów po&nbsp;jego zbudowaniu.</p>
+<p>W&nbsp;1966&nbsp;r. jako orga­ni­za­tor i&nbsp;kie­row­nik eks­pe­dy­cji Pol­skiego Towa­rzy­stwa Astro­nau­tycz­nego do&nbsp;Afryki Wschod­niej wyru­szył stat­kiem P.L.O. uzy­sku­jąc z&nbsp;obser­wa­cji wizu­al­nych z&nbsp;pokładu statku dal­sze wyniki badań nad&nbsp;pyłami księ­ży­co­wej orbity (odkry­cie Pyło­wego Pier­ście­nia Ziemi). W&nbsp;1973&nbsp;r. w&nbsp;cza­sie podob­nej eks­pe­dy­cji do&nbsp;Afryki Zachod­niej i&nbsp;w&nbsp;1974&nbsp;r. wokół Afryki, zor­ga­ni­zo­wał prace nad&nbsp;Pyło­wymi Księ­ży­cami Ziemi, otrzy­mu­jąc obraz ich tar­czy (ame­ry­kań­skie obser­wa­cje foto­elek­tryczne z&nbsp;Orbi­tu­ją­cego Obser­wa­to­rium <span class="caps">OSO</span>‑6 dały tylko&nbsp;potwier­dze­nie ist­nie­nia bez&nbsp;infor­ma­cji o&nbsp;ich mikrostrukturze).</p>
+<p>Wygła­szał liczne wykłady za&nbsp;gra­nicą: w&nbsp;Kijo­wie, <span class="caps">TV</span> Ber­liń­skim, Buda­pesz­cie, Ondrze­jo­wie pod&nbsp;Pragą, Amster­da­mie, Bruk­seli, Brnie, Ode­ssie, Gene­wie (<span class="caps">CERN</span>). Brał udział w&nbsp;kon­gre­sach Mię­dzy­na­ro­do­wej Unii Astro­no­micz­nej: w&nbsp;1958&nbsp;r. w&nbsp;Moskwie (łącz­nie z&nbsp;wyjaz­dem do&nbsp;Peters­burga, wów­czas Lenin­gradu), w&nbsp;1964&nbsp;r. w&nbsp;Ham­burgu, w&nbsp;1967&nbsp;r. w&nbsp;Pradze.</p>
+<p>W&nbsp;Kra­ko­wie prace naukowe wyko­ny­wali u&nbsp;niego 4 astro­no­mo­wie węgier­scy, 2 buł­gar­skich i&nbsp;jeden z&nbsp;<span class="caps">NRD</span>. Był pro­mo­to­rem prac dok­tor­skich: mgra Jerzego Kre­inera – obro­nio­nej w&nbsp;1970&nbsp;r., mgra Zbi­gniewa Dwo­raka – obro­nio­nej w&nbsp;1974&nbsp;r.</p>
+<p>W&nbsp;1948&nbsp;r. roz­po­czął pracę w&nbsp;Zarzą­dzie Pol­skiego Towa­rzy­stwa Miło­śni­ków Astro­no­mii oraz&nbsp;w&nbsp;Zarzą­dzie Pol­skiego Towa­rzy­stwa Astro­no­micz­nego, od&nbsp;1956&nbsp;r. był (z&nbsp;prze­rwami) prze­wod­ni­czą­cym Zarządu Kra­kow­skiego Oddziału Pol­skiego Towa­rzy­stwa Astro­nau­tycz­nego, w&nbsp;latach 1964–1980 dzia­łał w&nbsp;Zarzą­dzie Głów­nym tego Towa­rzy­stwa w&nbsp;War­sza­wie. W&nbsp;latach 1958–1967 był kie­row­ni­kiem Kra­kow­skiej Sta­cji Obser­wa­cji Sztucz­nych Sate­li­tów Ziemi. Od&nbsp;1964 roku był człon­kiem Pol­skiego Towa­rzy­stwa Esperantystów.</p>
+<p>Pra­cow­ni­kiem nauko­wym Obser­wa­to­rium Astro­no­micz­nego <span class="caps">UJ</span> był od&nbsp;1924&nbsp;r. do&nbsp;przej­ścia w&nbsp;1974&nbsp;r. na&nbsp;eme­ry­turę (50 lat z&nbsp;prze­rwą wojenną). Przej­ście na&nbsp;eme­ry­turę nie&nbsp;prze­rwało dzia­łal­no­ści nauko­wej i&nbsp;orga­ni­za­cyj­nej. Doro­bek naukowy obej­muje ponad 100 publi­ka­cji nauko­wych. Był zarówno nie­stru­dzo­nym obser­wa­to­rem gwiazd zmien­nych zaćmie­nio­wych jak i&nbsp;opra­co­wu­ją­cym te&nbsp;obser­wa­cje. Rów­no­cze­śnie pro­wa­dził na&nbsp;sze­roką skalę dzia­łal­ność popu­la­ry­za­tor­ską, m.i. w&nbsp;Towa­rzy­stwie Wie­dzy Powszech­nej, szko­łach, Pol­skim Radiu i&nbsp;Tele­wi­zji. Doce­nia­jąc dzia­łal­ność prof.&nbsp;T. Bana­chie­wi­cza dopro­wa­dził w&nbsp;1955&nbsp;r. do&nbsp;prze­nie­sie­nia zwłok z&nbsp;Cmen­ta­rza Rako­wic­kiego do&nbsp;gro­bów zasłu­żo­nych na&nbsp;Skałce. Jako żar­liwy patriota suge­ro­wał nazwa­nie odkry­tych przez&nbsp;sie­bie Pyło­wych Księ­ży­ców Ziemi – Księ­ży­cami Pol­skimi, a&nbsp;nie&nbsp;jak pro­po­no­wano – Księ­ży­cami Kordylewskiego.</p>
+<p>Uzy­skał odzna­cze­nia: Srebrna Hono­rowa Odznaka <span class="caps">PTMA</span> (1971), Hono­rowa odznaka Komi­tetu d.s. Radia i&nbsp;Tele­wi­zji (1971), Hono­rowa odznaka Pol­skiego Towa­rzy­stwa Astro­nau­tycz­nego (1971), Brą­zowy Medal <span class="caps">NASA</span> (1972), Złoty Krzyż Zasługi (1973), Medal Komi­sji Edu­ka­cji Naro­do­wej (1974), Medal 500-lecia Uro­dzin Koper­nika (1974), Krzyż Kawa­ler­ski Orderu Polo­nia Resti­tuta (1979).</p>
+<p style="text-align: justify;">Pocho­wany został na&nbsp;Cmen­ta­rzu Rako­wic­kim w&nbsp;Kra­ko­wie, w&nbsp;pasie 25, nie­da­leko od&nbsp;grobu Józefa Die­tla. Zna­kiem roz­po­znaw­czym gro­bowca rodziny Kor­dy­lew­skich są&nbsp;wyryte na&nbsp;nagrobku gwiazdy Wiel­kiego Wozu – aste­ry­zmu gwiaz­do­zbioru Wiel­kiej Niedźwiedzicy.</p>
+<p style="text-align: justify;">[Bio­gra­fia za&nbsp;www.kordylewski.pl]</p>
+<p>&nbsp;</p>
+<p>Wię­cej infor­ma­cji o&nbsp;naszym Patro­nie można zna­leźć na&nbsp;stro­nie <a href="http://www.kordylewski.pl/" target="_blank">http://www.kordylewski.pl/</a></p>								</div> <!-- end .entry -->
+
+				</div> 	<!-- end #left-area -->
+</div> <!-- end #content -->
+
+		<div id="footer">
+			<div id="footer-content" class="clearfix">
+				<div id="footer-widgets" class="clearfix">
+															<img class="aligncenter wp-image-11214 size-full" src="https://moa.edu.pl/wp-content/uploads/2023/04/logaeu.jpg" alt="" width="640" height="39" />
+				</div> <!-- end #footer-widgets -->
+				
+				
+				<p id="finalista">Finalista konkursu POPULARYZATOR NAUKI 2018 </p>
+
+				<p id="copyright">&copy; Młodzieżowe Obserwatorium Astronomiczne | 2016-2025</p>
+				
+			</div> <!-- end #footer-content -->
+		</div> <!-- end #footer -->
+	</div> <!-- end #container -->
+	<script src="https://moa.edu.pl/wp-content/themes/Chameleon/js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="https://moa.edu.pl/wp-content/themes/Chameleon/js/superfish.min.js" type="text/javascript"></script>
+<script src="https://moa.edu.pl/wp-content/themes/Chameleon/js/custom.js" type="text/javascript"></script>	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/Obserwatorium/*","/wp-content/themes/Chameleon/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<style type="text/css">
+							.pgntn-page-pagination {
+					text-align: left !important;
+				}
+				.pgntn-page-pagination-block {
+					width: 96% !important;
+					padding: 0 0 0 0;
+									}
+				.pgntn-page-pagination a {
+					color: #2c6cba !important;
+					background-color: #ffffff !important;
+					text-decoration: none !important;
+					border: 1px solid #cccccc !important;
+											-webkit-border-radius: 9px;
+						-moz-border-radius: 9px;
+						border-radius: 9px;
+									}
+				.pgntn-page-pagination a:hover {
+					color: #91172c !important;
+				}
+				.pgntn-page-pagination-intro,
+				.pgntn-page-pagination .current {
+					background-color: #efefef !important;
+					color: #000 !important;
+					border: 1px solid #cccccc !important;
+											-webkit-border-radius: 9px;
+						-moz-border-radius: 9px;
+						border-radius: 9px;
+									}
+				.archive #nav-above,
+					.archive #nav-below,
+					.search #nav-above,
+					.search #nav-below,
+					.blog #nav-below,
+					.blog #nav-above,
+					.navigation.paging-navigation,
+					.navigation.pagination,
+					.pagination.paging-pagination,
+					.pagination.pagination,
+					.pagination.loop-pagination,
+					.bicubic-nav-link,
+					#page-nav,
+					.camp-paging,
+					#reposter_nav-pages,
+					.unity-post-pagination,
+					.wordpost_content .nav_post_link,.page-link,
+					.post-nav-links,
+					.page-links,#comments .navigation,
+					#comment-nav-above,
+					#comment-nav-below,
+					#nav-single,
+					.navigation.comment-navigation,
+					comment-pagination {
+						display: none !important;
+					}
+					.single-gallery .pagination.gllrpr_pagination {
+						display: block !important;
+					}		</style>
+		<script type="text/javascript">var fb_timeout, fb_opts={'autoScale':true,'showCloseButton':true,'margin':20,'pixelRatio':'false','centerOnScroll':false,'enableEscapeButton':true,'overlayShow':false,'hideOnOverlayClick':false,'minVpHeight':320,'disableCoreLightbox':'true','enableBlockControls':'true','fancybox_openBlockControls':'true' };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery([".nolightbox","a.wp-block-file__button","a.pin-it-button","a[href*='pinterest.com\/pin\/create']","a[href*='facebook.com\/share']","a[href*='twitter.com\/share']"].join(',')).addClass('nofancybox');
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+/* IMG */
+						var unlinkedImageBlocks=jQuery(".wp-block-image > img:not(.nofancybox,figure.nofancybox>img)");
+						unlinkedImageBlocks.wrap(function() {
+							var href = jQuery( this ).attr( "src" );
+							return "<a href='" + href + "'></a>";
+						});
+var fb_IMG_select=jQuery('a[href*=".jpg" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".jpg" i]:not(.nofancybox),a[href*=".jpeg" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".jpeg" i]:not(.nofancybox),a[href*=".png" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".png" i]:not(.nofancybox),a[href*=".webp" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".webp" i]:not(.nofancybox)');
+fb_IMG_select.addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery,.ngg-galleryoverview,.ngg-imagebrowser,.nextgen_pro_blog_gallery,.nextgen_pro_film,.nextgen_pro_horizontal_filmstrip,.ngg-pro-masonry-wrapper,.ngg-pro-mosaic-container,.nextgen_pro_sidescroll,.nextgen_pro_slideshow,.nextgen_pro_thumbnail_grid,.tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,.fancybox>a').each(function(){jQuery(this).fancybox(jQuery.extend(true,{},fb_opts,{'transition':'elastic','transitionIn':'elastic','easingIn':'easeOutBack','transitionOut':'elastic','easingOut':'easeInBack','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false,'mouseWheel':'true'}))});
+/* YouTube */
+jQuery('a[href*="youtu.be/" i],area[href*="youtu.be/" i],a[href*="youtube.com/" i],area[href*="youtube.com/" i]' ).filter(function(){return this.href.match(/\/(?:youtu\.be|watch\?|embed\/)/);}).not('.nofancybox,li.nofancybox>a').addClass('fancybox-youtube');
+jQuery('a.fancybox-youtube,area.fancybox-youtube,.fancybox-youtube>a').each(function(){jQuery(this).fancybox(jQuery.extend(true,{},fb_opts,{'type':'iframe','width':882,'height':495,'padding':0,'keepRatio':1,'aspectRatio':1,'titleShow':false,'titlePosition':'float','titleFromAlt':true,'onStart':function(a,i,o){var splitOn=a[i].href.indexOf("?");var urlParms=(splitOn>-1)?a[i].href.substring(splitOn):"";o.allowfullscreen=(urlParms.indexOf("fs=0")>-1)?false:true;o.href=a[i].href.replace(/https?:\/\/(?:www\.)?youtu(?:\.be\/([^\?]+)\??|be\.com\/watch\?(.*(?=v=))v=([^&]+))(.*)/gi,"https://www.youtube.com/embed/$1$3?$2$4&autoplay=1");}}))});
+};};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+</script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131826856-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131826856-1');
+</script><script id="flexslider-js" src="https://moa.edu.pl/wp-content/themes/Chameleon/js/jquery.flexslider-min.js?ver=1.0"></script>
+<script id="flexslider_script-js" src="https://moa.edu.pl/wp-content/themes/Chameleon/js/et_flexslider.js?ver=1.0"></script>
+<script async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" src="https://moa.edu.pl/wp-includes/js/comment-reply.min.js?ver=c879dde809ec3afa58313a0efe058b14"></script>
+<script id="wp-hooks-js" src="https://moa.edu.pl/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://moa.edu.pl/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://moa.edu.pl/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.7"></script>
+<script id="contact-form-7-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2026-08-26 11:14:47+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);","lang":"pl"},"This contact form is placed in the wrong place.":["Ten formularz kontaktowy zosta\u0142 umieszczony w niew\u0142a\u015bciwym miejscu."],"Error:":["B\u0142\u0105d:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+//# sourceURL=contact-form-7-js-translations
+</script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/moa.edu.pl\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://moa.edu.pl/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.7"></script>
+<script id="wpfront-scroll-top-js-extra">
+var wpfront_scroll_top_data = {"data":{"css":"#wpfront-scroll-top-container{position:fixed;cursor:pointer;z-index:9999;border:none;outline:none;background-color:rgba(0,0,0,0);box-shadow:none;outline-style:none;text-decoration:none;opacity:0;display:none;align-items:center;justify-content:center;margin:0;padding:0}#wpfront-scroll-top-container.show{display:flex;opacity:1}#wpfront-scroll-top-container .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}#wpfront-scroll-top-container .text-holder{padding:3px 10px;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:4px 4px 5px 0px rgba(50,50,50,.5);-moz-box-shadow:4px 4px 5px 0px rgba(50,50,50,.5);box-shadow:4px 4px 5px 0px rgba(50,50,50,.5)}#wpfront-scroll-top-container{right:20px;bottom:90px;}#wpfront-scroll-top-container img{width:auto;height:auto;}#wpfront-scroll-top-container .text-holder{color:#ffffff;background-color:#000000;width:auto;height:auto;;}#wpfront-scroll-top-container .text-holder:hover{background-color:#000000;}#wpfront-scroll-top-container i{color:#000000;}","html":"\u003Cbutton id=\"wpfront-scroll-top-container\" aria-label=\"\" title=\"\" \u003E\u003Cimg src=\"https://moa.edu.pl/wp-content/plugins/wpfront-scroll-top/includes/assets/icons/1.png\" alt=\"\" title=\"\"\u003E\u003C/button\u003E","data":{"hide_iframe":false,"button_fade_duration":200,"auto_hide":false,"auto_hide_after":2,"scroll_offset":100,"button_opacity":0.8,"button_action":"top","button_action_element_selector":"","button_action_container_selector":"html, body","button_action_element_offset":0,"scroll_duration":400}}};
+//# sourceURL=wpfront-scroll-top-js-extra
+</script>
+<script id="wpfront-scroll-top-js" src="https://moa.edu.pl/wp-content/plugins/wpfront-scroll-top/includes/assets/wpfront-scroll-top.min.js?ver=3.0.1.09211"></script>
+<script id="fancybox-purify-js" src="https://moa.edu.pl/wp-content/plugins/easy-fancybox/vendor/purify.min.js?ver=c879dde809ec3afa58313a0efe058b14"></script>
+<script id="jquery-fancybox-js-extra">
+var efb_i18n = {"close":"Close","next":"Next","prev":"Previous","startSlideshow":"Start slideshow","toggleSize":"Toggle size"};
+//# sourceURL=jquery-fancybox-js-extra
+</script>
+<script id="jquery-fancybox-js" src="https://moa.edu.pl/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.js?ver=c879dde809ec3afa58313a0efe058b14"></script>
+<script id="jquery-easing-js" src="https://moa.edu.pl/wp-content/plugins/easy-fancybox/vendor/jquery.easing.min.js?ver=1.4.1"></script>
+<script id="jquery-mousewheel-js" src="https://moa.edu.pl/wp-content/plugins/easy-fancybox/vendor/jquery.mousewheel.min.js?ver=3.1.13"></script>
+<script id="wp-typography-cleanup-clipboard-js" src="https://moa.edu.pl/wp-content/plugins/wp-typography/js/clean-clipboard.min.js?ver=5.11.0"></script>
+<script id="et-core-common-js" src="https://moa.edu.pl/wp-content/themes/Chameleon/core/admin/js/common.js?ver=4.7.4"></script>
+<script id="google-recaptcha-js" src="https://www.google.com/recaptcha/api.js?render=6LfBMIAUAAAAALiqGKGr4naam1Y_x8yVxaXh7pJq&#038;ver=3.0"></script>
+<script id="wp-polyfill-js" src="https://moa.edu.pl/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"></script>
+<script id="wpcf7-recaptcha-js-before">
+var wpcf7_recaptcha = {
+    "sitekey": "6LfBMIAUAAAAALiqGKGr4naam1Y_x8yVxaXh7pJq",
+    "actions": {
+        "homepage": "homepage",
+        "contactform": "contactform"
+    }
+};
+//# sourceURL=wpcf7-recaptcha-js-before
+</script>
+<script id="wpcf7-recaptcha-js" src="https://moa.edu.pl/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.1.7"></script>
+<script id="easing-js" src="https://moa.edu.pl/wp-content/themes/Chameleon/includes/page_templates/js/jquery.easing-1.3.pack.js?ver=1.3.4"></script>
+<script id="magnific_popup-js" src="https://moa.edu.pl/wp-content/themes/Chameleon/includes/page_templates/js/magnific_popup/jquery.magnific-popup.js?ver=1.3.4"></script>
+<script id="et-ptemplates-frontend-js-extra">
+var et_ptemplates_strings = {"captcha":"Captcha","fill":"Fill","field":"field","invalid":"Invalid email"};
+//# sourceURL=et-ptemplates-frontend-js-extra
+</script>
+<script id="et-ptemplates-frontend-js" src="https://moa.edu.pl/wp-content/themes/Chameleon/includes/page_templates/js/et-ptemplates-frontend.js?ver=1.1"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://moa.edu.pl/wp-includes/js/wp-emoji-release.min.js?ver=c879dde809ec3afa58313a0efe058b14"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://moa.edu.pl/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+		<!-- Cookie Compliance for WordPress (formerly Compliance by Hu-manity.co) plugin v3.1.9 https://cookie-compliance.co/ -->
+		<div id="cookie-notice" role="dialog" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Compliance" style="background-color: rgba(114,4,4,1);"><div class="cookie-notice-container" style="color: #fff"><span id="cn-notice-text" class="cn-text-container">Nasza strona korzysta z plików cookies. Jej dalsze przeglądanie oznacza akceptację tego faktu.</span><span id="cn-notice-buttons" class="cn-buttons-container"><button id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button cn-button-custom button" aria-label="OK">OK</button></span><button type="button" id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" aria-label="Nie" tabindex="0"></button></div>
+			
+		</div>
+		<!-- / Cookie Compliance for WordPress plugin -->
+
+	
+</body>
+</html>
